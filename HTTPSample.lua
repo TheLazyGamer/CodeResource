@@ -1,0 +1,20 @@
+http.request("http://example.com")
+
+local requesting = true
+
+while requesting do
+  local event, url, sourceText = os.pullEvent()
+  
+  if event == "http_success" then
+    local respondedText = sourceText.readAll()
+    
+    sourceText.close()
+    print(respondedText)
+    
+    requesting = false
+  elseif event == "http_failure" then
+    print("Server didn't respond.")
+    
+    requesting = false
+  end
+end

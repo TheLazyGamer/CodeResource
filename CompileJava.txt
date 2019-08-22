@@ -1,0 +1,18 @@
+ //Run javac with multiple jars. Assumes all your jars and the java file are in the same working directory.
+ 
+//Compiles selected jars in the working directory in Windows
+javac -cp .;twitter4j-core-4.0.4.jar;twitter4j-stream-4.0.4.jar Bot.java
+java -cp .;twitter4j-core-4.0.4.jar;twitter4j-stream-4.0.4.jar Bot
+ 
+//Compiles all jars in the working directory in Windows
+javac -cp .;* Bot.java
+java -cp .;* Bot
+ 
+//Compile all jars in the lib folder in your directory in Windows
+javac -cp .;lib/* Bot.java
+java -cp .;lib/* Bot
+
+
+//Compile single jar in Windows
+javac -cp selenium-server-standalone-2.53.0.jar Bot.java
+java -cp selenium-server-standalone-2.53.0.jar;. Bot

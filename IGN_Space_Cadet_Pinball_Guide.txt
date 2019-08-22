@@ -1,0 +1,2222 @@
+===============================================================================
+                      _______    ___ _      _          _ _
+                     |__ /   \  | _ (_)_ _ | |__  __ _| | |
+                      |_ \ |) | |  _/ | ' \| '_ \/ _` | | |
+                     |___/___/  |_| |_|_||_|_.__/\__,_|_|_|
+
+                 ___                      ___         _     _
+                / __|_ __  __ _ __ ___   / __|__ _ __| |___| |_
+                \__ \ '_ \/ _` / _/ -_) | (__/ _` / _` / -_)  _|
+                |___/ .__/\__,_\__\___|  \___\__,_\__,_\___|\__|
+                    |_|
+===============================================================================
+
+                                       By
+
+                                    Froesch
+
+===============================================================================
+Index
+===============================================================================
+I.     - Copyright..................................................[Line 
+61]
+II.    - Guide Purpose..............................................[Line 
+74]
+III.   - Game Information...........................................[Line 
+82]
+                - Version                                           [Line 
+84]
+                - Operating System                                  [Line 
+92]
+                - Synopsis                                          [Line 
+96]
+IV.    - Program Controls & Menus...................................[Line 
+105]
+                - Game Controls                                     [Line 
+107]
+                - Menus                                             [Line 
+129]
+                - Function Keys                                     [Line 
+161]
+                - Dialog Boxes                                      [Line 
+181]
+V.     - Scoreboard.................................................[Line 
+206]
+VI.    - Table......................................................[Line 
+242]
+                - Elements                                          [Line 
+249]
+                - Lights                                            [Line 
+583]
+VII.   - Messages...................................................[Line 
+840]
+                - Informational                                     [Line 
+845]
+                - Instructional                                     [Line 
+1019]
+VIII.  - Missions...................................................[Line 
+1083]
+                - Rank: Cadet                                       [Line 
+1120]
+                - Ranks: Ensign & Lieutenant                        [Line 
+1178]
+                - Ranks: Captain & Lt. Commander                    [Line 
+1264]
+                - Ranks: Commander & Commodore                      [Line 
+1345]
+                - Ranks: Admiral & Fleet Admiral                    [Line 
+1407]
+                - Mission Progress Notices                          [Line 
+1491]
+                - Mission Completion Notices                        [Line 
+1661]
+                - Final Mission Note                                [Line 
+1707]
+IX.    - Bonus', Jackpots & Awards..................................[Line 
+1716]
+X.     - Cheat Codes................................................[Line 
+1796]
+                - Max Codes                                         [Line 
+1810]
+                - Test Codes                                        [Line 
+1828]
+XI.    - Advide & Strategy..........................................[Line 
+1843]
+                - General Advice                                    [Line 
+1850]
+                - Specific Advice                                   [Line 
+1890]
+                - Things to Get Good At                             [Line 
+1932]
+XII.   - Frequently Asked Questions (FAQ) & Comments................[Line 
+1977]
+XIII.  - Thanks.....................................................[Line 
+2062]
+XIV.   - End of Guide...............................................[Line 
+2075]
+
+===============================================================================
+I. Copyright
+===============================================================================
+This guide may not be reproduced in-whole or in-part for any reasons other 
+than
+personal or private use.  It may not be publicly distributed without the
+express written consent of the author.  Use of this guide without express
+written consent is strictly prohibited and a violation of copyright.
+
+All trademarks and copyrights contained in this document are owned by their
+respective trademark and copyright holders.
+
+Copyright 2006-2007 Michael Morin (Froesch)
+
+===============================================================================
+II. Guide Purpose
+===============================================================================
+This guide was created to address certain short-comings, errors and
+inaccuracies observed in the game Help and other 3D Space Cadet Pinball 
+Guides
+found online.  It is intended to be the most complete and the most accurate
+Guide for 3D Space Cadet Pinball available.
+
+===============================================================================
+III. Game Information
+===============================================================================
+Version
+------------------------------
+	Microsoft ¿ 3D Pinball for Windows - Space Cadet
+	Version 5.1 (Build 2600.xpsp_sp2_gdr.050301-1519 : Service Pack 2)
+	Copyright ¿ 1981-2001 Microsoft Corporation
+	3D Pinball Table created for Microsoft by Maxis.
+	Copyright ¿ 1995 Maxis
+
+Operating System
+------------------------------
+	Microsoft ¿ Windows ¿ XP Professional
+
+Synopsis
+------------------------------
+You are a young Cadet trying to graduate from the Space Academy and make a 
+name
+for yourself as an officer.  You must complete you training and prove your
+abilities in order to move up through the ranks and increase your score.  Do
+you  have what it takes to become a Fleet Admiral?  In 3D Space Cadet 
+Pinball
+you'll find out!
+
+===============================================================================
+IV. Program Controls & Menus
+===============================================================================
+Game Controls
+------------------------------
+>Flipper (2x)
+        - Used to send the Ball up the table.  Activate the flipper(s) to
+          rotate the Re-entry & Launch Lane Lights.  Each flipper rotates 
+them
+          in a different direction.
+        - Default Keys: Right Flipper: "/", Left Flipper: "z"
+
+>Plunger (1x)
+        - Used to send the Ball up the Deployment Chute.
+        - Default Key: Space Bar.
+        - Hold Space Bar to send the Ball further up the Deployment Chute.
+
+>Nudge (3x)
+        - Hits the table to adjust Ball movement.
+        - Default Keys: Nudge Right: "x", Nudge Left: ".", Nudge Up: "?"
+        - If any of the Nudge keys is held for to long the table will Tilt.
+
+>Go to the Options menu and select Keyboard Controls to change the Default
+  Controls (See the 'Dialog Boxes' section).
+
+
+Menus
+------------------------------
+Menus may be accessed by clicking on the Menu name at the top of the Game
+Window.
+
+>Game Menu
+        - New Game
+                * Starts a new game.
+        - Launch Ball
+                * Sends the Ball up the Deployment Chute.
+        - Pause/Resume Game
+                * Pauses/Un-pauses the current game.
+        - High Scores...
+                * Displays the High Scores Dialog Box
+        - Demo
+                * Begins a game demonstration.
+        - Exit
+                * Closes the game window.
+
+>Options
+        - Full Screen
+                * Resizes the game to Full Screen.
+                        > Hit [F4] or [Esc] to toggle back to window mode.
+        - Select Players
+                * Select the number of players (1, 2, 3, or 4)
+        - Sounds
+                * Toggles game sounds On/Off.
+        - Music
+                * Toggles game music On/Off.
+        - Player Controls...
+                * Opens the Player Controls Dialog Box
+
+Function Keys
+------------------------------
+>[F1] Help
+        - Launches the Help window.
+        - See the 'Dialog Boxes' section for more information.
+
+>[F2] New Game
+        - Starts a new game
+
+>[F3] Pause/Resume Game
+        - Pauses/Un-pauses the current game.
+
+>[F4] Full Screen
+        - Resizes the game to Full Screen.
+        - Hit [F4] or [Esc] to toggle back to window mode
+
+>[F8] Player Controls
+        - Opens the Player Controls Dialog Box.
+        - See the 'Dialog Boxes' section for more information.
+
+Dialog Boxes
+------------------------------
+>High Scores
+        - Shows the top 5 high scores and the players who scored them.
+        - After a High Score is achieved this box is opened and the player 
+is
+          able to enter their name.
+        - Click "OK" or "Cancel" to close dialog box.
+        - Click "Clear" to reset all high scores to 0 (Required 
+confirmation).
+
+>Player Controls
+        - Allows the default Player Controls to be changed.
+        - Use the pull downs to change which keys control specific 
+functions.
+        - Click "OK" to save changes, "Cancel" to keep the same settings and
+          "Default" to changes all controls to the default settings
+	- See the 'Game Controls' section for default control settings.
+
+>Help
+        - Accesses the Help information for the game.
+        - Use the "Contents", "Index", and "Search" tabs to find information
+          you want.
+
+Note: The in-game help isn't completely accurate and doesn't always have the
+      information you may be looking for, hence this guide.
+
+===============================================================================
+V. Scoreboard
+===============================================================================
+The Scoreboard takes up the right side of the game window or screen (full
+screen mode).  It is where information about the game is displayed.  The
+Scoreboard is comprised of a number of displays (windows) which show 
+different
+information.
+
+>Ball Window
+        - Small box at the top right.
+        - Displays the number of balls played, including the current ball.
+        - When the 3rd Ball drains the current game is over.
+        - Number does not include Free Balls or Replay Balls.
+
+>Information Window
+        - Medium sized box between the Score Box and the Instruction Box.
+        - Displays the number of balls played, including the current ball.
+        - Indicates when upgrades, awards, jackpots, bonus' or other
+          non-mission related objectives have been completed.
+
+>Instruction Window
+        - Large box at the bottom.
+        - Displays information about what to do in order to "progress" in 
+the
+          game.
+        - Indicates mission objectives and basic instructions.
+
+>Player Window
+        - Small box at the top left.
+        - Indicates which number player is currently playing.
+        - Changes during multiplayer modes only.
+
+>Score Window
+        - Skinny box just below the Ball Box.
+        - Indicates the score achieved in the current game.
+        - Updates continuously as points are scored.
+
+===============================================================================
+Table
+===============================================================================
+The table takes up the left side of the game window or screen (full screen
+mode). It is where the game is played.  The ball tends to travel by 
+"gravity"
+from the top to the bottom of the Table.  The Table is comprised of a number 
+of
+different elements which affect the ball and how points are scored.
+
+Elements
+------------------------------
+BUMPERS
+>Bumpers are white & mushroom shaped with colored lights on top.  There are 
+>7
+  Bumpers and 3 types.
+
+>Attack Bumpers
+        - 3 Bumpers grouped at the top of the Table.
+        - Upgrade by lighting all 3 Re-entry lane lights simultaneously
+        - The color of the light on top of the Bumper indicates the upgrade
+          level.
+                * Blue - 500 points
+                * Green - 1000 points
+                * Yellow - 1500 points
+                * Red - 2000 points
+
+>Engine Bumpers
+        - 3 Bumpers grouped on the Launch Ramp.
+        - Upgrade by lighting all 3 Launch Lane lights simultaneously.
+        - The color of the light on top of the Bumper indicates the upgrade
+          level.
+                * Blue - 1500 points
+                * Green - 2500 points
+                * Yellow - 3500 points
+                * Red - 4500 points
+
+>Satellite (Remote Attack) Bumper
+        - 1 Bumper at the top left of the Table.
+        - Considered one of the Attack Bumpers in most situations.
+        - Upgrades with the Attack Bumpers.
+        - The color of the light on top of the Bumper indicates the upgrade
+          level.
+                * Blue - 1500 points
+                * Green - 2500 points
+                * Yellow - 3500 points
+                * Red - 4500 points
+
+CHUTES & RAMPS
+>Chutes & Ramps are paths for the Ball to follow.  There are 4 total.
+
+>Deployment Chute
+        - Chute at the right side of the Table.
+        - Send the Ball up the chute by operating the plunger.
+        - If the Ball exits the bottom of the chute (Skill Shot Lane) points
+          are awarded based on the number of Deployment Lights lit.
+                * 1 light - 15000 points
+                * 2 lights - 30,000 points
+                * 3 lights - 75000 points
+                * 4 lights - 30,000 points
+                * 5 lights - 15000 points
+                * 6 lights - 7500 points
+        - A Skill Shot cannot be awarded on a Replay Ball.
+
+>Fuel Chute
+        - Curved Chute at the middle-left side of the Table.
+        - Send the Ball up the chute to 'Re-fuel'.
+        - The amount of fuel is based on how many lights are lit (See Fuel
+          Lights & Fuel Rollover).
+
+>Hyperspace Chute
+        - Curved Chute at the top-right of the table.
+        - Send the Ball up the chute to the Hyperspace Kicker.
+        - Points are not awarded unless the Ball enters the Hyperspace 
+Kicker.
+
+>Launch Ramp
+        - Purple Ramp at the middle-left side of the table.
+        - Send the Ball up to 'Launch'.
+                * Normal Launch - 5000 points
+                * Reflex Award Launch - 25000 points
+        - The Ball is not considered to have passed the ramp unless it drops
+          into the Launch Lanes.
+        - This is the only way to hit the Launch Lanes & Bumpers or accept a
+	  Mission.
+	- Upon exit the Ball will enter the Bonus Lane.
+
+FLAGS
+>Spinning White panels at the ends of each the Hyperspace & Fuel Chutes.
+>Spinning a flag changes the Wormhole Exit Light color if the Wormhole is
+  opened.
+
+>Fuel Flag
+        - Points are awarded based on the status of the Booster Target 
+Lights.
+                * No Booster - 500 points per ¿ spin.
+                * Booster Lit - 2500 points per ¿ spin.
+
+>Hyperspace Flag
+        - Points are awarded based on the status of the Booster Target 
+Lights.
+                * No Booster - 500 points per ¿ spin.
+                * Booster Lit - 2500 points per ¿ spin.
+
+KICKERES
+>Areas where the Ball is stopped and "kicked" out.
+>There are 9 kickers on the Table.
+
+>Black Hole Kicker
+        - Located under the Launch Ramp.
+        - When entered 20,000 points are awarded.
+        - The Ball is kicked out at the Medal Targets.
+
+>Gravity Well
+        - Located at the center of the circle of lights on the lower part of
+          the Table.
+        - Kicker is activated when the Hyperspace Kicker is entered 5
+          consecutive times.
+        - The Ball is attracted to the Gravity Light.
+        - If the Ball comes to rest on the light:
+                * 50,000 points are awarded
+                * The Ball is kicked out in a random direction.
+                * The Gravity Well is deactivated ("Normalized").
+
+>Hyperspace Kicker
+        - Located at the end of the Hyperspace Chute in the top-right of the
+          Table.
+        - Enter this kicker to 'Launch to Hyperspace'.
+        - If the Ball re-enters the kicker while the Hyperspace Reflex Light 
+is
+          lit then a Reflex Shot is awarded.
+        - Points are awarded based on which Hyperspace Lights is lit.
+                * 1st light - 10,000 points (Hyperspace Bonus)
+                * 2nd light - 20,000 points + the Jackpot (Jackpot Awarded)
+                * 3rd light - 20,000 points + the Center Post is raised.
+                * 4th light - 50,000 points + Extra Ball Available
+                * 4 lights go out - 150,000 points + Gravity Well Activated
+	- Reflex Shot - +20,000 points
+
+>Out-Lane Kicker
+        - Located at the bottom of the two Out-Lanes at the bottom-left &
+          bottom-right of the table.
+        - Ball is kicked out and the kicker becomes de-activated.
+        - The right kicker sends the Ball into the Secondary Out Kicker.
+        - The left kicker sends the Ball up the Fuel Chute & 'Re-fuels' the
+          ship.
+                * To re-activate the left Out-Lane Kicker light all 3 
+Radiation
+                  Target Lights.
+                * To re-activate the right Out-Lane kicker light all 3 Comet
+                  Target Lights.
+        - Entering the Kickers is worth 0 points, however the Out-Lane is
+          passed twice.
+
+>Secondary Out Kicker
+        - Located at the top of the Right Out-Lane.
+        - Kicks the Ball into, up and out of the Deployment Chute into the
+          Re-Entry Area.
+
+>Wormhole
+        - 3 Wormhole Kickers are located throughout the Table.
+                * Red - Top Right near the Attack Bumpers.
+                * Yellow - Bottom Right above the Right Return Lane.
+                * Green - Top Left below the Satellite Bumper.
+        - If the Wormhole is not "opened" the Ball is kicked back out where 
+it
+          entered.
+        - If "opened" Ball is kicked out of the color (red, green or yellow)
+          wormhole as indicated by the Wormhole Exit Light.
+        - Extra points are awarded based on the activation of the wormhole 
+and
+          where it exits.
+                * "Open" the Wormholes by hitting the Wormhole Spot Target.
+                * Ball enters closed Wormhole Kicker - 2000 points
+                * Ball enters "opened" Wormhole and exits a different 
+Wormhole
+                  Kicker - 7500 points.
+                * Ball enters the same "opened" Wormhole Kicker which it 
+will
+		  exit - 5000 points + Replay Ball is awarded.
+
+LANES
+>Short chutes the Ball passes through.
+>There are 12 lanes throughout the Table.
+
+>Bonus Lane
+        - Single lane between the Left Out-Lane and the Left Return Lane.
+        - The Bonus Lane is always passed when the Ball passes the Launch 
+Ramp.
+        - Enter this lane to "Re-fuel' the ship.
+        - Extra points are awarded if the Bonus Lane Light is on and the 
+Bonus
+          was activated
+                * Lane Pass - 10,000 points
+                * See the Bonus Section for more information.
+
+>Launch Lanes
+        - 3 Lanes located on the Launch Ramp above the Engine Bumpers.
+        - Pass the lanes to toggle the corresponding Launch Lane Light.
+                * Lane Pass - 500 points
+                * Light all 3 lane lights and upgrade the Engine Bumpers.
+
+>Out-Lanes
+        - 2 Lanes located at the lower-left and lower-right of the Table.
+        - Pass this lane and the ball drains or enters the Out-Lane Kicker 
+when
+          the kicker is activated.
+                * Lane Pass - 20,000 points.
+                * Extra Ball Light - 20,000 points + Extra Ball is awarded.
+
+>Re-entry Lanes
+        - 3 Lanes located at the top of the Table above the Attack Bumpers.
+        - Pass the lanes to toggle the corresponding Launch Lane Light.
+                * Lane Pass - 2000 points
+                * Light all 3 lane lights and upgrade the Attack & Satellite
+                  Bumpers.
+
+>Return Lanes
+        - 2 Lanes located at the lower-left & lower-right corners of the 
+Table.
+        - Pass this lane and the Ball returns to one of the Flippers.
+        - Extra Points are awarded if the Return Lane Light is lit.
+                * Lane Pass - 5000 points
+                * Lane Light - 25,000 points
+        - Light the Return Lane Lights by hitting the Space Warp Rollover.
+
+>Skill Shot Lane
+        - Single Lane located at the bottom of the Deployment Chute to the 
+left
+          of the 1st Deployment Light.
+        - Deploy the Ball through this lane to receive a Skill Shot bonus.
+        - See Deployment Chute for more information.
+
+ROLLOVERS
+>Panels flush with the tables which light up when the ball rolls over them.
+>There are 7 rollovers throughout the table.
+
+>Fuel Rollover
+        - 6 rollovers located in the Fuel Chute.
+                * The second rollover is hidden under the Launch Ramp.
+        - If the Ball rolls over a fuel light points are awarded and the 
+light
+          is lit.
+        - The top (blue) light is worth more points if it is out when rolled
+          over.
+                * Bottom 5 - 500 points
+                * Top (blue) - 500 points when lit, 1500 points when dark.
+
+>Space Warp Rollover
+        - Single round green Rollover at the top-left of the Table below the
+          Satellite Bumper.
+        - Hit this Rollover to turn on the Return Lane Lights.
+		* This element is worth 0points.
+
+TARGETS, DROP
+>Yellow squares which fall when hit.
+>Targets impart some energy to the Ball when it rebounds.
+>There 9 Drop Targets located throughout the Table.
+
+>Booster Targets
+        - 3 Drop Targets grouped at the middle-right of the table.
+        - Drop all 3 Targets to activate a play mode.
+        - Receive additional Play Modes if all the previous Booster Lights 
+are
+          lit.
+                * 1st 2 Targets - 500 points each
+                * 3rd Target - 5000 points + Play Mode
+                * 1st play mode (bottom light) - Upgrade Flags
+                * 2nd play mode (bottom-middle light) - Activate Jackpot
+                * 3rd play mode (top-middle light) - Activate Bonus
+                * 4th play mode (top light) - Bonus Hold
+        - Play modes are active for a limited amount of time.
+        - The lowest play mode not active is activated when the lights all 
+the
+          targets are dropped.
+
+>Medal Targets
+        - 3 Drop Targets grouped at the center of the table.
+        - Drop all 3 Targets to receive a Commendation.
+        - Receive higher Commendations if previous Metal Target Light is 
+still
+          lit.
+                * 1st 2 Targets - 1500 points each
+                * Level 1 Commendation - 10,000 points
+                * Level 2 Commendation - 50,000 points
+                * Level 3 Commendation - 0 points + Free Ball
+
+>Multiplier Targets
+        - 3 Drop Targets grouped at the top-left of the table above the 
+Attack
+          Bumpers.
+        - Drop all 3 Targets to receive a Field Multiplier.
+        - Receive higher Field Multipliers if the previous Field Multiplier
+          Light is still lit.
+                * 1st 2 Targets - 500 points each
+                * 3rd Target - 1500 points + Field Multiplier
+        - Field Multipliers are awarded in the following order:
+                * 1st Multiplier - 2x
+                * 2nd Multiplier - 3x
+                * 3rd Multiplier - 5x
+                * 4th Multiplier - 10x
+        - Multipliers are applied to all points scored on the table except
+          Jackpots, Bonus' and Mission Completion Awards.
+
+TARGETS, SPOT
+>Small red circles which impart a small amount of energy to the Ball when 
+>hit.
+>There are 13 Spot Targets located throughout the Table.
+>Targets impart a small amount of energy to the wall when it rebounds.
+>Hitting a Spot Target lights the corresponding Target Light.
+
+>Comet (Right Hazard) Targets
+        - 3 Spot Targets grouped to the right of the Attack Bumpers.
+        - Light all 3 Right Hazard Target Lights to re-activate the right
+          Out-Lane Kicker.
+        - 750 points per hit.
+
+>Fuel Targets
+        - 3 Spot Targets grouped around the Satellite Bumper.
+        - Light all 3 Fuel Target Lights to "Re-fuel".
+        - 750 points per hit.
+
+>Mission Targets
+        - 3 Spot Targets grouped at the bottom of the Fuel Chute.
+        - Hit the targets to select a mission.
+                * There are 4 missions associated with each rank.
+                * Missions vary depending on your rank.
+                * See the Mission Section for more information.
+        - 1000 points per hit.
+
+>Radiation (Left Hazard) Targets
+        - 3 Spot Targets grouped to the left of the Attack Bumpers.
+        - Light all 3 Left Hazard Target Lights to re-activate the left
+          Out-Lane Kicker.
+        - 750 points per hit.
+
+>Wormhole Target
+        - Single Spot Target located at the bottom of the Hyperspace Chute.
+        - Hit the target to "Open" the Wormholes & rotate the Wormhole Exit
+          Light color.
+        - 750 points per hit.
+
+OTHER ELEMENTS
+>Center Post
+        - Post between the Flippers just above the Drain Area.
+        - To activate the Center Post enter the Hyperspace Kicker 3 times in 
+a
+          row.
+
+>Drain Area
+        - Area below the Flippers.
+        - If the Ball enters this area it will drain.
+
+>Rebounds
+        - 4 rubber band-like elements located throughout the Table.
+                * 1 located above each flipper.
+                * 1 located below the Right Hazard Targets
+                * 1 located to the right of the Left Hazard Targets.
+        - Impart a significant amount of energy to the Ball when hit.
+
+>Re-entry Area
+        - Area at the top of the Table just above the Re-Entry Lanes.
+        - The Ball enters this area when discharged from the top of the
+          Deployment Chute.
+        - If the Ball enters this area it will pass one of the Re-entry 
+Lanes.
+
+Lights
+------------------------------
+CHUTE LIGHTS
+>Deployment Chute
+        - 6 lights across the Deployment Chute.
+        - Indicates how far up the Deployment Chute the Ball has traveled.
+        - Not available on Replay Balls.
+
+>Fuel Chute
+        - 6 Lights in the Fuel Chute.
+        - Indicates how much 'Fuel' is left.
+        - The second light is hidden by the Launch Ramp.
+        - A light blinks and goes out every 10-20 seconds depending on the
+          light.
+        - Total Fuel is approximately 90 seconds.
+        - Roll over to re-light.
+
+>Launch Ramp
+        - Single Light at the top of the Launch Ramp.
+        - Off - No mission is selected.
+        - Blinking - Hit the ramp to accept the current mission.
+        - On - A mission is active.
+
+>Skill Shot, Hyperspace Chute
+        - Top arrow of the 3 arrows located at the bottom of the Hyperspace
+          Chute.
+        - Indicates a skill shot is available for entering the Hyperspace
+          Kicker.
+
+>Skill Shot Arrow, Launch Chute
+        - Top arrow of the 3 arrows located at the bottom of the Launch 
+Ramp.
+        - Indicates a skill shot is available for entering the Launch Ramp.
+
+KICKER LIGHTS
+>Gravity Well
+        - Single Light set in the center of the Progress & Rank Lights.
+        - Blinking - Indicates the Gravity Well has been activated.
+        - De-activate by stopping the Ball on the Gravity Well.
+
+>Hyperspace Kicker
+        - 4 lights located across the Hyperspace Chute.
+        - Indicates the number of consecutive times the Hyperspace Kicker 
+has
+          been entered.
+        - See "Hyperspace Kicker" in the Elements Section for more 
+information.
+        - Lights are extinguished in order after approximately 60 seconds.
+        - If the Hyperspace Kicker is entered 5 consecutive times all the
+          lights are extinguished.
+
+>Replay
+        - 1 light located below each of the Flippers. (2 lights total)
+        - Allows a Ball to be "re-deployed" if it drains when light is lit.
+        - The table does not reset.
+        - The right Replay Light is temporarily lit after deployment.
+        - The left light becomes lit when the Ball enters an active wormhole 
+of
+          the same color as the Wormhole Exit Light.
+
+>Secondary Out-Lane Kicker Arrow
+        - Single light just to the right of the Yellow Wormhole
+        - Indicates he Ball has entered the Secondary Out Kicker and will be
+          kicked into the Re-entry Area.
+
+>Wormhole Color
+        - Single Light located just above each of the Wormhole Kickers. (3
+          lights total)
+        - Indicates the color of the Wormhole.
+        - Lit when the Wormhole is "Opened" by hitting the Wormhole Spot
+          Target.
+        - Goes out when a Ball enters any Wormhole.
+
+LANE LIGHTS
+>Bonus Lane
+        - Single light in the Bonus Lane.
+        - Indicates a bonus is available in this lane.
+        - Activated when a mission is completed.
+        - Goes out when the Ball passes the Bonus Lane.
+
+>Engine Lanes
+        - Single light associated with each of the Launch Lanes (3 lights
+          total).
+        - Indicates which lanes have been activated.
+        - Toggle light by passing the lane.
+        - Rotate the lights by using the flippers.
+        - When all 3 lights are lit the Engines Bumpers are upgraded.
+
+>Out Lanes
+        - Single light located at the top of each of the Out-Lanes (2 lights
+          total).
+        - Indicates an Extra Ball is available in this lane.
+        - Pass the lane to receive an Extra Ball.
+
+>Re-entry Lanes
+        - Single light associated with each of the Re-entry Lanes. (3 lights
+          total).
+        - Indicates which lanes have been activated.
+        - Toggle light by passing the lane.
+        - Rotate the lights by using the flippers.
+        - When all 3 lights are lit the Attack Bumpers are upgraded.
+
+>Return Lanes
+        - Single light located at the top of each of the Return Lanes
+          (2 lights total).
+        - Incites a point bonus is available in this lane.
+        - Pass the lane to receive extra points.
+
+MISSION LIGHTS
+>See the Missions Section for more information.
+
+>Mission Accept Arrow
+        - Bottom of the 3 arrows at the bottom of the Launch Ramp.
+        - Indicates that the selected mission will be accepted by hitting 
+the
+          Launch Ramp.
+
+>Mission Arrow
+        - Blinking arrows located throughout the board.
+        - Indicates where the Ball is to be played to complete the current
+          mission objective.
+        - The location and number of arrows varies depending on the current
+          mission objective.
+
+>Maelstrom Hyperspace Arrow
+        - Bottom of the 3 arrows at the bottom of the Hyperspace Chute.
+        - Indicates the Maelstrom Mission will be completed when the Ball is
+          sent into the Hyperspace Kicker.
+
+>Progress
+        - 18 blue lights set in a circle at the bottom-center of the Table.
+        - Indicates the progress through the current rank.
+        - Lights are lit when a mission is completed.
+        - Light all 18 to complete the increase in rank.
+
+>Rank
+        - 9 yellow lights set in a circle at the bottom-center of the Table.
+        - The number of lights lit indicate the current Rank
+                * 1 light  - Cadet
+                * 2 lights - Ensign
+                * 3 lights - Lieutenant
+                * 4 lights - Captain
+                * 5 lights - Lt. Commander
+                * 6 lights - Commander
+                * 7 lights - Commodore
+                * 8 lights - Admiral
+                * 9 lights - Fleet Admiral
+
+>Time Warp Hyperspace Arrow
+        - Middle of the 3 arrows at the bottom of the Hyperspace Chute.
+        - Indicates the Time Warp Mission will be completed if the Ball 
+enters
+          the Hyperspace Kicker (Demotion).
+
+>Time Warp Launch Arrow
+        - Middle of the 3 arrows at the bottom of the Launch Ramp.
+        - Indicates the Time Warp Mission will be completed if the Ball 
+enters
+          the Launch Ramp (Promotion).
+
+MISCELLANEOUS LIGHTS
+>Center Post
+        - Single light located between the Flippers.
+        - Indicates the Center Post is activated.
+        - Blinks before the Center Post is retracted.
+
+>Meteor
+        - 3 lights grouped to the lower-right of the Attack Bumpers.
+        - Function Unknown.
+        - Lights blink during the New Game display.
+
+>Space Warp
+        - Same location as the Space Warp Rollover.
+        - Lights when the Space Warp Rollover is hit.
+
+>Tilt
+        - X-shaped light just below the Mission Target Lights.
+        - Indicates the Table has been tilted.
+
+>Wormhole Exit Arrow
+        - Single arrow located at the entrance to each of the Wormhole 
+Kickers.
+        - Indicates the color of the wormhole the Ball will exit from if the
+          wormhole is entered.
+        - Color is toggled by hitting the Wormhole Target or spinning either 
+of
+          the flags.
+        - Goes out when a Ball enters any wormhole.
+
+TARGET, DROP LIGHTS
+>Booster
+        - 4 lights associated with the Booster Targets.
+        - Lights are lit by hitting all 3 Booster Targets.
+                * Hit all 3 targets consecutive times to activate additional
+                  Play Modes.
+        - Indicates which of the Play Modes are activated
+                * Bottom light - 1st play mode (Upgrade Flags)
+                * Bottom-middle light - 2nd play mode (Activate Jackpot)
+                * Top-middle light - 3rd play mode (Activate Bonus)
+                * Top light - 4th play mode (Bonus Hold)
+        - Lights remain lit for approximately 60 seconds.
+
+>Field Multiplier
+        - 4 lights associated with the Field Multiplier Targets.
+        - Lights are lit by hitting all 3 Field Multiplier Targets.
+                * Hit all 3 targets consecutive times to increase the Field
+		  Multiplier.
+        - Indicates which multiplier is currently being applied
+                * 0 lights - 1x
+                * 1 light  - 2x
+                * 2 lights - 3x
+                * 3 lights - 5x
+                * 4 lights - 6x
+        - Lights are extinguished in order after approximately 60 seconds.
+
+>Flag Upgrade
+        - Single light located below each of the Flags.
+        - Indicates the Flags have been upgraded.
+                * See "Booster Targets" in the Table Elements section for 
+more
+		  information.
+        - Lights remain lit for approximately 60 seconds.
+
+>Medal
+        - 3 lights associated with the Medal Target Targets.
+        - Lights are lit (Commendation Awarded) by hitting all 3 Medal 
+Targets.
+                * Hit all 3 targets consecutive times to increase the
+                  Commendation.
+        - Indicates which Commendation has been awarded
+                * 1 light - Level 1 Commendation
+                * 2 lights - Level 2 Commendation
+                * 3 lights - Level 3 Commendation
+        - Lights are extinguished in order after approximately 60 seconds.
+
+TARGET, SPOT LIGHTS
+>Comet
+        - 3 lights associated with the Comet (Right Hazard) Targets.
+        - Lights are lit by hitting the associated Comet (Right Hazard) 
+Target.
+        - Light all 3 lights and the Right Out-Lane Kicker is activated.
+                * When this happens the lights blink and go out
+
+>Fuel
+        - 3 lights associated with the Fuel Targets.
+        - Lights are lit by hitting the associated Fuel Target.
+        - Light all 3 lights and all the Fuel Lights are lit ("Ship 
+Re-fuled").
+                * When this happens the lights blink and go out.
+
+>Mission
+        - 3 lights associated with the Mission Targets.
+        - Lights are lit by hitting the associated Mission Target.
+        - Light all 3 lights to select the 4th mission.
+                * See the Mission Section for more information.
+
+>Radiation
+        - 3 lights associated with the Radiation (Left Hazard) Targets.
+        - Lights are lit by hitting the associated Radiation (Left Hazard)
+          Target.
+        - Light all 3 lights and the Left Out-Lane Kicker is activated.
+                * When this happens the lights blink and go out.
+
+>Wormhole
+        - Single light associated with the Wormhole Target.
+        - Light is lit by hitting the Wormhole Target.
+                * When lit the Wormholes are "Open"
+                * Light goes out when a Wormhole is entered
+
+===============================================================================
+Messages
+===============================================================================
+Mission Objectives & Notices are not included in this section.  Refer to the
+Mission Section for more information.
+
+Informational
+------------------------------
+All informational messages are displayed in the Information Window (See the
+Score Board section for more information)
+
+>Black Hole
+        - Happens when the Ball enters the Black Hole Kicker.
+        - Means the Ball will be kicked out of the Black Hole Kicker.
+
+>Bonus Activated
+        - Happens when the 3 Booster Targets have been dropped for the 3rd
+	  consecutive time.
+        - Means points are added to the Bonus as they are accumulated on the
+          table.
+                * See the Bonus Section for more Information
+
+>Bonus Awarded
+        - Happens when the Bonus Lane has been passed when the Bonus Lane 
+Light
+          was lit.
+        - Means the Bonus has been awarded.
+
+>Bonus Hold
+        - Happens when the 3 Booster Targets have been dropped for the 4th
+          consecutive time.
+        - Means the Bonus will not reset after the Ball drains.
+
+>Careful...
+        - Happens when the table has been 'nudged'.
+        - Means if the table continues to be nudged it will Tilt.
+
+>Center Post
+        - Happens when the Hyperspace Kicker has been entered 3 consecutive
+          times.
+        - Means the Center Post is raised for a limited amount of time.
+
+>Continue Play
+        - Happens when the game has been unpaused by pressing F3.
+        - Means that game play has resumed.
+
+>Crash Bonus
+        - Happens when the Ball has drained & no Replay is available.
+        - Means extra points are awarded for loosing your current Ball.
+
+>Engines Upgraded
+        - Happens when the 3 Launch Lane Lights have been lit.
+        - Means extra points are awarded when the Ball hits the Engine 
+Bumpers.
+                * Upgrade order: Blue, Green, Yellow, Red
+
+>Extra Ball
+        - Happens when a Level 3 Commendation is awarded or the Ball passes 
+an
+          Out-Lane when the Out-Lane Light is lit.
+        - Means an Extra Ball has been awarded.
+
+>Extra Ball Available
+        - Happens when the Hyperspace Kicker has been entered 4 consecutive
+          times.
+        - Means the Out-Lane Lights have been lit.
+                * See 'Extra Ball' above.
+
+>Field Multiplier #x
+        - Happens when the 3 Multiplier Targets have been dropped.
+        - Means the points for every Table Element have been multiplied by 
+the
+          value indicated until the Target Lights go out.
+
+>Flags Upgraded
+        - Happens when the 3 Booster Targets have been dropped for the 1st
+          time.
+        - Means that flags point values have been increased by a factor of 
+5.
+
+>Game Paused F3 to Resume
+        - Happens when the game is paused by pressing F3 or making another
+          window active.
+        - Press the F3 key to un-pause and resume game play.
+
+>Gravity Normalized
+        - Happens when the Ball comes to rest on the Gravity Well Light.
+        - Means points have been awarded and the Ball will kick in a random
+          direction and the Gravity Well Kicker is de-activated.
+
+>Gravity Well
+        - Happens when the Hyperspace Kicker has been entered 5 consecutive
+          times.
+        - Means the Gravity Well Kicker is activated.
+
+>Hyperspace Bonus
+        - Happens when the Hyperspace Kicker has been entered 1 time.
+        - Means a 10,000 point bonus has been awarded.
+                * The Hyperspace Bonus is unaffected by the Bonus 
+activation.
+
+>Jackpot Activated
+        - Happens when the 3 Booster Targets have been dropped 2 consecutive
+          times.
+        - Means points are added to the Jackpot as they are accumulated on 
+the
+          board.
+
+>Jackpot Awarded
+        - Happens when the Hyperspace Kicker has been entered for the 2nd
+          consecutive time.
+        - Means the Jackpot has been awarded.
+                * The Jackpot is reset after it has been awarded.
+
+>Level # Commendation
+        - Happens when the 3 Medal Targets have been dropped.
+        - Means points are awarded and an Extra Ball is awarded with a Level 
+3
+          Commendation.
+
+>Player #
+        - Happens when a new Ball (not a Replay or Free Ball) is to be
+          deployed.
+        - Indicates the player number who's turn it is to play.
+
+>Re-Deploy
+        - Happens when the Ball has drained & the Right Replay Light is lit.
+        - Means the same Ball is ready to be played by the plunger.
+                * Note: The table does reset.
+
+>Reflex Shot
+        - Happens when the Ball is sent up the Launch Ramp or into the
+          Hyperspace Kicker soon after it has exited same.
+        - Means additional points are awarded.
+
+>Replay Awarded
+        - Happens when the Ball enters an active Wormhole of the same color 
+as
+          the Wormhole Exit Light.
+        - Means the Ball can drain and the table will not reset.
+
+>Replay Ball
+        - Happens when the Ball has drained & the Left Replay Light is lit.
+        - Means the same Ball is ready to be played by the plunger.
+                * Note: The table does not reset.
+
+>Ship Re-fueled
+        - Happens when the Ball has rolled over an un-lit Fuel Light, passed
+          the Bonus Lane, or all 3 Fuel Target Lights have been lit.
+        - Means more fuel has been added and it will take longer to run out.
+
+>Shoot Again
+        - Happens when the Ball has drained & an extra Ball has previously 
+been
+          awarded.
+        - Means a new Ball is ready to be played by the plunger.
+                * Note: The table does reset.
+                * Note: The Ball indicator does not advance.
+
+>Skill Shot
+	- Happens when the Ball exits the bottom of the Deployment Chute.
+	- Means extra points have been awarded based on the degree of the Skill
+	  Shot.
+		* See 'Chutes & Ramps' in the Table Elements Section.
+
+>TILT!
+        - Happens when a 'nudge' key has been held to long and the table has
+          'Tilted'.
+        - Means all Player Controls cease to function.
+                * The Ball drains as a result.
+                * Replay Balls are lost but Free Balls are not.
+
+>Weapons Upgraded
+        - Happens when the 3 Re-entry Lane Lights have been lit.
+        - Means extra points are awarded when the Ball hits the Attack &
+          Satellite Bumpers.
+                * Upgrade order: Blue, Green, Yellow, Red
+
+>Wormhole
+        - Happens when a Wormhole has been entered.
+        - Check the Wormhole Exit Lights to see where the Ball will be 
+kicked
+          out.
+
+>Wormhole Opened
+        - The Wormholes target is hit when the Wormholes are de-activated.
+        - The Ball will exit the Wormhole indicated by the arrow at it's
+          entrance.
+                * A Replay Ball is awarded if the Ball exits the same Open
+                  Wormhole it enters.
+
+Instructional
+------------------------------
+All instructional messages are displayed in the Information Window (See the
+Score Board section for more information)
+
+>... Mission Completed
+        - Happens when all the requirements of the active mission have been
+	  completed.
+        - Means points and Progress Lights have been awarded.
+                * Refer to the Mission Section for more information.
+
+>... Training Passed
+        - Happens when one of the first 3 Cadet Missions has been completed.
+        - Means 50,0000 points and 6 Progress Lights have been awarded.
+
+>Awaiting Deployment
+        - Happens at the beginning of the game or when a Ball is drained and 
+no
+          Replay or Extra Balls are available.
+        - Means a new Ball is ready to be played by the plunger.
+
+>Demotion to ...
+        - Happens when the Time Warp Mission has been completed by sending 
+the
+          Ball into the Hyperspace Kicker.
+        - Means your Rank has decreased by 1 and all Progress Lights have 
+been
+          extinguished.
+
+>Hit Mission Targets to Select Mission
+        - Happens when the ball is in play and no mission has been selected.
+        - Hit the Mission Targets to select a mission.
+
+>Launch Ramp to Accept ...
+        - Happens when a mission or training session has been selected but 
+is
+          not active.
+        - Send the Ball up the Launch Ramp to accept the mission indicated.
+
+>Mission Aborted
+        - Happens when a mission is active and all the Fuel Lights go out.
+        - Means the active mission has been aborted and a new mission must 
+be
+          selected.
+
+>Mission Accepted
+        - Happens when a mission is selected and the Launch Ramp has been
+          passed.
+        - Means a mission has been accepted.
+                * Refer to the Score Board and Mission Arrows to progress
+                  through the mission.
+
+>Promotion to ...
+        - Happens when all 18 Progress Lights have been lit.
+        - Means 1 Rank Light has been lit (Rank increase) and all Progress
+          Lights blink and go out.
+
+>Re-Fuel Ship
+        - Happens when all the fuel lights have gone out.
+        - Means if an mission is active it has been aborted.
+        - Send the Ball up the Fuel Chute, through the Bonus Lane, into the
+          Left Out-Lane Kicker, or hit all 3 Fuel Targets to Re-fuel.
+
+>Warning - Low Fuel
+        - Happens when only 1 Fuel Light remains lit.
+        - Send the Ball up the Fuel Chute, through the Bonus Lane, into the
+          Left Out-Lane Kicker, or hit all 3 Fuel Targets to Re-fuel.
+
+===============================================================================
+Missions
+===============================================================================
+>Use the Mission Targets to select a mission.
+        - Each target corresponds to a different mission based on current 
+rank.
+        - The last target hit selects the mission.
+        - If all the targets are hit (No Mission Target Lights lit) then the
+          4th mission (All) is selected.
+
+>To accept a mission pass the Launch Ramp once the mission is selected.
+
+>Look at the Score Board messages to help you know what to do and how you're
+  progressing through the mission.
+
+>Look for the blinking Mission Arrows to help you know where to aim your 
+>Ball.
+
+>A mission will terminate if all the Fuel Lights go out.
+	- Watch the Fuel Lights and the Score Board for the "Warning -
+          Low Fuel" message.
+
+>If the Ball drains while in the middle of a mission the mission is aborted.
+        - The mission remains active if a Replay Ball is available
+
+>Difficulty levels listed are subjective and relative within each rank.
+
+>Accumulate 18 Progress lights to increase in rank.
+
+>Ranks are as follows:
+        - 1 Rank Light - Cadet
+        - 2 Rank Lights - Ensign
+        - 3 Rank Lights - Lieutenant
+        - 4 Rank Lights - Captain
+        - 5 Rank Lights - Lt. Commander
+        - 6 Rank Lights - Commander
+        - 7 Rank Lights - Commodore
+        - 8 Rank Lights - Admiral
+        - 9 Rank Lights - Fleet Admiral
+
+Rank: Cadet
+------------------------------
+>Rank Strategy
+        - All the missions are pretty simple so play which ever you like the
+          best.
+        - You can complete this rank quickly by completing the Science 
+Mission
+          1st & 2nd.
+        - You can gain some extra points by completing the Science Mission
+          twice (1st & 3rd or 2nd & 3rd).
+
+>Top Target: Launch Training
+        - Difficulty: Easy
+        - 10,000 points for accepting mission.
+        - 50,0000 points for completing mission.
+        - 6 progress lights for completing mission.
+	- Objectives
+                * Pass the Launch Ramp 3 times.
+        - Strategy
+                * Try and send the Ball up the Launch Ramp from the Left
+                  Flipper each time it drops from the platform to receive 
+Skill
+                  Shots.
+
+>Middle Target: Re-entry Training
+        - Difficulty: Hardest
+        - 10,000 points for accepting mission.
+        - 50,0000 points for completing mission.
+        - 6 progress lights for completing mission.
+        - Objectives
+                * Pass the Re-entry Lanes 3 times.
+        - Strategy
+                * Use Out-Lane Kickers & Re-Deploys to your advantage.
+
+>Bottom Target: Target Practice
+        - Difficulty: Medium
+        - 10,000 points for accepting mission.
+        - 50,0000 points for completing mission.
+        - 6 progress lights for completing mission.
+        - Objectives
+                * Hit the Attack Bumpers 8 times.
+        - Strategy
+                * Send the Ball to the top of the Table and let it bounce
+                  around.
+
+>All Targets: Science Mission
+        - Difficulty: Hard
+        - 10,000 points for accepting mission.
+        - 750,000 points for completing mission.
+        - 9 progress lights for completing mission.
+        - Objectives
+                * Hit 9 Drop Targets.
+        - Strategy
+                * Aim for the Booster & Medal Targets.  They're easiest to 
+hit
+                  from the flippers.
+        - Notes:
+                * When accepted all Drop Targets will be raised.
+                * If you are trying for extra Multipliers, Commendations or
+                  Play Modes you may not want to accept this mission
+
+Ranks: Ensign & Lieutenant
+------------------------------
+>Rank Strategy
+        - Bug Hunt's definitely the easiest & Secret is definitely the 
+hardest.
+        - The Secret Missions is not really worth attempting because, unless
+          you finish it twice, you still need to complete 3 missions to get
+          promoted.
+
+>Top Target: Bug Hunt Mission
+        - Difficulty: Easy
+        - 20,000 points for accepting mission.
+        - 750,000 points for completing mission.
+        - 7 progress lights for completing mission.
+        - Objectives
+                * Hit 15 targets (Drop and/or Hit).
+        - Strategy
+                * Play for whatever you like.
+                * Remember the Bumpers & Rebounds don't count towards your 
+15
+                  hits.
+        - Notes:
+                * When accepted all Drop Targets will be raised & all Spot
+                  Target Lights will go out.
+                * If you are trying for extra Multipliers, Commendations or
+                  Play Modes you may not want to accept this mission.
+                * If you are trying to activate either of the Out-Lane 
+Kickers
+                  you may not want to accept this mission.
+
+>Middle Target: Rescue Mission
+        - Difficulty: Medium
+        - 20,000 points for accepting mission.
+        - 750,000 points for completing mission.
+        - 7 progress lights for completing mission.
+        - Objectives
+                * Upgrade Flags.
+                * Enter the Hyperspace Kicker.
+        - Strategy
+                * Catch the Ball on the Left Flipper and hit the Booster
+                  Targets and Hyperspace Kicker.
+        - Notes:
+                * If the Flags are upgraded when accepted they are degraded 
+to
+                  normal status, however the Upgraded Flags Bonus Target 
+Light
+                  remains lit.
+                * The Hyperspace Kicker must be entered while the Flags are
+                  upgraded.
+                * If the Flags are degraded before entering the Hyperspace
+                  Kicker they will need to be upgraded again.
+
+>Bottom Target: Alien Menace Mission
+        - Difficulty: Hard
+        - 20,000 points for accepting mission.
+        - 750,000 points for completing mission.
+        - 7 progress lights for completing mission.
+        - Objectives
+                * Upgrade the Attack Bumpers.
+                * Hit the Attack Bumpers 8 times.
+        - Strategy
+                * Use Out-Lane Kickers & Re-Deploys to your advantage.
+                * Use the Flippers to rotate the Re-entry Lane Lights.
+        - Notes:
+                * If the Attack Bumpers are upgraded when accepted they are
+                  degraded to normal status, however the Re-Entry Lane 
+Lights
+                  remain lit.
+
+>All Targets: Secret Mission
+        - Difficulty: Hard
+        - 30,000 points for accepting mission.
+        - 1,500,000 points for completing mission.
+        - 10 progress lights for completing mission.
+        - Objectives
+                * Enter the Yellow Wormhole.
+                * Enter the Red Wormhole.
+                * Enter the Green Wormhole.
+        - Strategy
+                * The Yellow & Red Wormholes can be entered from either
+                  flipper.
+                * Use the Fuel Chute to try and enter the Green Wormhole.
+                * If you get this mission by accident and don't want to try
+                  (yes it's that hard) hold the Ball on a flipper until Fuel
+                  runs out.
+	- Notes
+                * Entering the appropriate Wormhole will not light the 
+Replay
+                  Light.
+                * If the mission is aborted (all Fuel Lights go out) then 
+the
+                 Wormholes will have to be re-activated ("Opened") before a
+                 Replay can be awarded.
+
+Ranks: Captain & Lt. Commander
+------------------------------
+>Rank Strategy
+        - These are the hardest ranks in the game.
+        - The missions are unforgiving and you still need 3 basic missions 
+to
+          get promoted.
+        - Accept Cosmic Plague whenever you get the chance, it's the easiest 
+by
+          far.
+
+>Top Target: Stray Comet Mission
+        - Difficulty: Medium
+        - 20,000 points for accepting mission.
+        - 1,000,000 points for completing mission.
+        - 8 progress lights for completing mission.
+        - Objectives
+                * Light all 3 Right Hazard Target Lights.
+                * Enter the Hyperspace Kicker.
+        - Strategy
+                * Make sure the Right Out-Lane Kicker is available before
+                  beginning this mission.
+                * Send the Ball to the top of the table with the Left 
+Flipper.
+                * The top 2 Right Hazard Targets can be hit directly.
+	- Notes:
+                * When accepted all Right Hazard Target Lights will go out.
+                * If the Right Out-Lane Kicker is de-activated you may not 
+want
+                  to accept this mission.
+
+>Middle Target: Space Radiation Mission
+        - Difficulty: Hard
+        - 20,000 points for accepting mission.
+        - 1,000,000 points for completing mission.
+        - 8 progress lights for completing mission.
+        - Objectives
+                * Light all 3 Left Hazard Target Lights.
+                * Enter any Wormhole..
+	- Strategy
+                * Make sure the Left Out lane Kicker is available before
+                  beginning this mission.
+                * Send the Ball to the top of the table any way possible.
+                * When entering the Wormhole, try for a Replay.
+        - Notes:
+                * When accepted all Left Hazard Target Lights will go out.
+                * If the Left Out-Lane Kicker is de-activated you may not 
+want
+                  to accept this mission.
+
+>Bottom Target: Black Hole Mission
+        - Difficulty: Hard
+        - 20,000 points for accepting mission.
+        - 1,000,000 points for completing mission.
+        - 8 progress lights for completing mission.
+        - Objectives
+                * Upgrade the Engine Bumpers.
+                * Enter the Black Hole Kicker.
+        - Strategy
+                * Use the same technique from Launch Training.
+                * Upgrade the Engine Bumpers to Red to have the best chance 
+of
+                  completing the mission.
+                * Use the Flippers to rotate the Launch Lane Lights.
+        - Notes:
+                * If the Engine Bumpers are upgraded when accepted they are
+                  degraded to normal status, however the Engine Lane Lights
+                  remain lit.
+                * It takes some luck to enter the Black Hole Kicker.
+                * Entering the Black Hole Kicker will not complete the 
+mission
+                  if the Engine Bumpers have been downgraded to blue.
+
+>All Targets: Cosmic Plague Mission
+        - Difficulty: Easy
+        - 30,000 points for accepting mission.
+        - 1,750,000 points for completing mission.
+        - 11 progress lights for completing mission.
+        - Objectives
+                * Spin flags 75 times.
+                * Hit Space Warp Rollover.
+        - Strategy
+                * Aim for the Hyperspace Chute to get double the Flag roll.
+                * Send the ball to the top of the table through the Fuel 
+Chute
+                  to hit the Space Warp Rollover.
+        - Notes
+                * This is by far the easiest mission for these ranks.
+
+Ranks: Commander & Commodore
+------------------------------
+>Rank Strategy
+        - These are pretty homogeneous missions.
+        - Now it's easier to increase your rank.
+        - Be wary of the Time Warp and don't get demoted.
+
+>Top Target: Satellite Retreval Mission
+        - Difficulty: Medium
+        - 20,000 points for accepting mission.
+        - 1,250,000 points for completing mission.
+        - 9 progress lights for completing mission.
+        - Objectives
+                * Hit the Satellite Bumper 3 times.
+        - Strategy
+                * Use the Fuel Chute & Green Wormhole to send the Ball to 
+the
+                  Satellite Bumper.
+
+>Middle Target: Recon Mission
+        - Difficulty: Easy
+        - 20,000 points for accepting mission.
+        - 1,250,000 points for completing mission.
+        - 9 progress lights for completing mission.
+        - Objectives
+                * Pass any of the lanes 15 times.
+        - Strategy
+                * By sending the Ball up the Launch Ramp you're guaranteed 
+at
+                  least 2 lane passes.
+        - Notes:
+                * Use the technique from Launch Training to pass the Launch
+                  Ramp multiple times.
+
+>Bottom Target: Doomsday Machine Mission
+        - Difficulty: Hardest
+        - 20,000 points for accepting mission.
+        - 1,250,000 points for completing mission.
+        - 9 progress lights for completing mission.
+        - Objectives
+                * Send the Ball through the Out-Lanes 3 times.
+        - Strategy
+                * Have a Replay & active Out-Lane Kickers.
+                * If the Ball enters the Black Hole Kicker you may want to 
+let
+                  it kick into the Right Out-Lane.
+        - Notes:
+                * By hitting an Out Lane Kicker you get 2 Out-Lane Passes.
+
+>All Targets: Time Warp Mission
+        - Difficulty: Hard
+        - 30,000 points for accepting mission.
+        - 2,000,000 points for completing mission.
+        - 12 progress lights for completing mission.
+        - Objectives
+                * Hit the Rebounds 25 times.
+                * Enter the Launch Ramp or Hyperspace Kicker.
+        - Strategy
+                * Use the rebounds at the top of the table as well as the 
+ones
+                  near the flippers.
+        - Notes:
+                * If your rank is Commander (6 Rank Lights) don't get 
+demoted.
+                * Hitting the Launch Ramp increases the Rank Lights while 
+the
+                  Hyperspace Kick out decreases them.
+
+Ranks: Admiral & Fleet Admiral
+------------------------------
+>Rank Strategy
+        - Maelstrom's the best because of the points & rewards, but Cosmic
+          Plague is easy.
+        - Be wary of the Time Warp and don't get demoted.
+
+>Top: Cosmic Plague Mission
+        - Difficulty: Easy
+        - 30,000 points for accepting mission.
+        - 1,750,000 points for completing mission.
+        - 11 progress lights for completing mission.
+        - Objectives
+                * Spin flags 75 times.
+                * Hit Space Warp Rollover.
+        - Strategy
+                * Aim for the Hyperspace Chute to get double the Flag roll.
+                * Send the ball to the top of the table through the Fuel 
+Chute
+                  to hit the Space Warp Rollover.
+        - Notes:
+                * This is by far the easiest mission for these ranks.
+
+>Middle Target: Secret Mission
+        - Difficulty: Hard
+        - 30,000 points for accepting mission.
+        - 1,500,000 points for completing mission.
+        - 10 progress lights for completing mission.
+        - Objectives
+                * Enter the Yellow Wormhole.
+                * Enter the Red Wormhole.
+                * Enter the Green Wormhole.
+        - Strategy
+                * The Yellow & Red Wormholes can be entered from either
+                  flipper.
+                * Use the Fuel Chute to try and enter the Green Wormhole
+                * If you get this mission by accident and don't want to try
+                  (yes it's that hard) hold the Ball on a flipper until Fuel
+                  runs out.
+	- Notes:
+                * Entering the appropriate Wormhole will not light the 
+Replay
+                  Light.
+                * If the mission is aborted (all Fuel Lights go out) then 
+the
+                  Wormholes will have to be re-activated ("Opened") before a
+                  Replay will be awarded.
+
+>Bottom Targets: Time Warp Mission
+        - Difficulty: Medium
+        - 30,000 points for accepting mission.
+        - 2,000,000 points for completing mission.
+        - 12 progress lights for completing mission.
+        - Objectives
+                * Hit the Rebounds 25 times.
+                * Enter the Launch Ramp or Hyperspace Kicker.
+        - Strategy
+                * Use the rebounds at the top of the table as well as the 
+ones
+                  near the flippers.
+        - Notes:
+                * If your rank is Commander (6 Rank Lights) don't get 
+demoted.
+                * Hitting the Launch Ramp increases the Rank Lights while 
+the
+                  Hyperspace Kick out decreases them.
+
+>All Targets: Maelstrom
+        - Difficulty: Hard
+        - 30,000 points for accepting mission.
+        - 5,000,000 points for completing mission.
+        - 18 progress lights for completing mission.
+        - Objectives
+                * Hit 3 Drop Targets.
+                * Hit 3 Spot Targets.
+                * Send the Ball through 5 lanes.
+                * Rollover the top (blue) Fuel Light.
+                * Send the Ball up the launch ramp.
+                * Roll a Flag.
+                * Enter any Wormhole.
+                * Enter the Hyperspace Kicker.
+	- Strategy
+                * Having a Replay available is the best way to insure this
+                  mission is completed.
+                * Use all you've learned to complete this mission.
+        - Notes:
+                * Completing this mission lights out all your incremental 
+bonus
+                  lights (Medal Targets, Booster Targets, Multiplier Targets 
+&
+                  Hyperspace Lights).
+
+Mission Progress Notices
+------------------------------
+>Attack Bumper Hits Left:
+        - Indicates the number of times to hit the Attack Bumpers.
+                * Start value: 8
+        - Rank: Cadet, Ensign & Lieutenant
+        - Mission: Target Practice & Alien Menace Mission
+
+>Drop Target Hits Left:
+        - Indicates the number of times to hit any of the Drop Targets.
+                * Start value: 3
+        - Rank: Admiral & Fleet Admiral
+        - Mission: Maelstrom
+
+>Drop Targets Left:
+        - Indicates the number of times to hit the Drop Targets.
+                * Start value: 9
+        - Rank: Cadet
+        - Mission: Science
+
+>Enter Black Hole
+        - Send the Ball into the Black Hole Kicker.
+        - Rank: Captain & Lt. Commander
+        - Mission: Black Hole
+
+>Enter Wormhole
+        - Send the Ball into any of the Wormhole Kickers.
+        - Rank: Captain & Lt. Commander
+        - Mission: Space Radiation
+
+>Fill Left Hazard Banks
+        - Hit all 3 of the Radiation (Left Hazard) Targets.
+        - Rank: Captain & Lt. Commander
+        - Mission: Space Radiation
+
+>Fill Right Hazard Banks
+        - Hit all 3 of the Comet (Right Hazard) Targets.
+                * Start value: 8 Hits
+        - Rank: Captain & Lt. Commander
+        - Mission: Stray Comet
+
+>Hit (color) Wormhole
+        - Send the Ball into the color Wormhole Kicker indicated..
+        - Rank: Ensign & Lieutenant, Admiral & Fleet Admiral
+        - Mission: Secret
+
+>Hit Flags
+        - Roll (hit) either of the Flags.
+                * Start value: 8 Hits
+        - Rank: Admiral & Fleet Admiral
+        - Mission: Maelstrom
+
+>Hit Hyperspace Chute or Launch Ramp
+        - Send the Ball into the Hyperspace Kicker or up the Launch Ramp.
+                * Demotion for Hyperspace Kicker.
+                * Promotion for Launch Ramp.
+        - Rank: Commander & Commodore, Admiral & Fleet Admiral
+        - Mission: Time Warp
+
+>Hit Launch Ramp
+        - Send the Ball up the Launch Ramp.
+                * Start value: 8 Hits
+        - Rank: Admiral & Fleet Admiral
+        - Mission: Maelstrom
+
+>Hit Space Warp Rollover
+        - Roll the Ball over the Space Warp Rollover.
+        - Rank: Captain & Lt. Commander, Admiral & Fleet Admiral
+        - Mission: Cosmic Plague
+
+>Hit Wormhole
+        -Send the Ball into any of the Wormhole Kickers.
+                * Start value: 8 Hits
+        - Rank: Admiral & Fleet Admiral
+        - Mission: Maelstrom
+
+>Hyperspace Chute to End Maelstrom
+        - Send the Ball into the Hyperspace Kicker to end the mission.
+                * Start value: 8 Hits
+        - Rank: Admiral & Fleet Admiral
+        - Mission: Maelstrom
+
+>Hyperspace Launch
+        - Send the Ball into the Hyperspace Kicker.
+        - Rank: Ensign & Lieutenant , Captain & Lt. Commander
+        - Mission: Rescue & Stray Comet
+
+>Lane Passes Left:
+        - Indicates the number of times to roll the Ball through any of the
+          Lanes.
+                * Start value: 15 Passes
+        - Rank: Commander & Commodore
+        - Mission: Recon
+
+>Lane Passes Left:
+        - Indicates the number of times to roll the Ball through any of the
+          Lanes.
+                * Start value: 5 Passes
+        - Rank: Admiral & Fleet Admiral
+        - Mission: Maelstrom
+
+>Launches Left:
+        - Indicates the number of times to send the Ball up the Launch Ramp.
+		* Start value: 3 Launches
+        - Rank: Cadet
+        - Mission: Launch Training
+
+>Out Lane Passes Left:
+        - Indicates the number of times to roll the Ball through the Out 
+Lanes.
+                * Start value: 3 Passes
+        - Rank: Commander & Commodore
+        - Mission: Doomsday Machine
+
+>Rebound Hits Left:
+        - Indicates the number of times to hit the Rebounds.
+                * Start value: 25 Hits
+        - Rank: Commander & Commodore, Admiral & Fleet Admiral
+        - Mission: Time Warp
+
+>Re-Entries Left:
+        - Indicates the number of times to send the Ball through the 
+Re-Entry
+          Lanes.
+                * Start value: 3 Passes
+        - Rank: Cadet
+        - Mission: Re-Entry Training
+
+>Remote Attack Bumpers Hits Left:
+        - Indicates the number of times to hit the Satellite Bumper.
+                * Start value: 3 Hits
+        - Rank: Commander & Commodore
+        - Mission: Satellite Retrieval
+
+>Roll Flags:
+        - Indicates the number of times to roll (hit) the Flags.
+                * Start value: 75 Rolls
+        - Rank: Captain & Lt. Commander, Admiral & Fleet Admiral
+        - Mission: Cosmic Plague
+
+>Shoot Ball Up Fuel Chute
+        - Roll the Ball over the top-most Fuel Light..
+        - Rank: Admiral & Fleet Admiral
+        - Mission: Maelstrom
+
+>Spot Target Hits:
+        - Indicates the number of times to hit any of the Spot Targets.
+                * Start value: 3 Hits
+        - Rank: Admiral & Fleet Admiral
+        - Mission: Maelstrom
+
+>Targets Left:
+        - Indicates the number of times to hit the Targets (Spot or Drop).
+                * Start value: 15 Hits
+        - Rank: Ensign & Lieutenant
+        - Mission: Bug Hunt
+
+>Upgrade Attack Bumpers
+        - Light all 3 Re-Entry Lane lights.
+        - Rank: Ensign & Lieutenant
+        - Mission: Alien Menace
+
+>Upgrade Engine Bumpers
+        - Light all 3 Engine Lane Lights.
+        - Rank: Captain & Lt. Commander
+        - Mission: Black Hole
+
+>Upgrade Flags
+        - Hit the Bonus Targets to upgrade the Flags.
+        - Rank: Ensign & Lieutenant
+        - Mission: Rescue
+
+Mission Completion Notices
+------------------------------
+>Aliens Repelled
+        - The Alien Menace Mission has been completed.
+
+>Black Hole Eliminated
+        - The Black Hole Mission has been completed.
+
+>Comet Destroyed
+        - The Stray Comet Mission has been completed.
+
+>Doomsday Machine Destroyed
+        - The Doomsday Machine mission has been completed.
+
+>Maelstrom!
+        - The Maelstrom Mission has been completed.
+
+>Plague Eliminated
+        - The Cosmic Plague Mission has been completed.
+
+>Plans Recovered
+        - The Secret Mission has been completed.
+
+>Radiation Eliminated
+        - The Space Radiation Mission has been completed.
+
+>Satellite Repaired
+        - The Satellite Retrieval Mission has been completed.
+
+>Survey Complete
+        - The Recon Mission has been completed.
+
+>Survivors Rescued
+        - The Rescue Mission has been completed.
+
+>Time Warp Backward
+        - The Time Warp Mission has been completed by sending the Ball into 
+the
+	  Hyperspace Kicker.
+
+>Time Warp Forward
+        - The Time Warp Mission has been completed by sending the Ball up 
+the
+          Launch Ramp.
+
+>Xenomorphs Destroyed
+        - The Bug Hunt Mission has been completed.
+
+Final Mission Note
+------------------------------
+Some strategy guides/walkthroughs indicate that if you light all 18 Progress
+Light with a Rank of Fleet Admiral that the game will freeze and you will 
+not
+be able to post your high score.  THIS IS NOT TRUE on my version so you may
+want to test it using the Cheat Codes before you're in a position where you
+have to choose to complete the Fleet Admiral rank and lock up the game.
+
+===============================================================================
+Bonus', Jackpots and Awards
+===============================================================================
+>Points are added to the Bonus & Jackpots at the base rate they are
+  accumulated on the board.
+
+>Multipliers, Mission Awards, Bonuses & Jackpots are not added to the total.
+
+>For more information see the 'Informational' part of the Messages Section.
+
+>Bonus (Bonus Lane)
+        - Awarded when the Ball passes the Bonus Lane and the Bonus Light is
+          lit.
+                * Base value: 10,000 points
+                * To light the Bonus Lane Light a mission must be completed.
+        - To increase point value drop all 3 Booster Targets 3 (Bonus
+          Activated) or 4 (Bonus Hold) consecutive times.
+                * When the Bonus is Activated points are added to the Bonus 
+as
+                  they are accumulated on the board.
+                * The Bonus is reset to its base value when the ball drains
+                  unless the Bonus Hold is on.
+                * The maximum Bonus is 5,000,000 points.
+
+>Center Post
+        - Awarded when the Hyperspace Kicker is entered 3 consecutive times.
+                * Fixed value: 20,000 points
+        - The Center Post is activated for approximately 60 sec. before it
+          goes down.
+
+>Crash Bonus
+        - Awarded when the Ball drains and no Replay is available.
+                * Base value: 10,000 points
+                * Increased to 25,000 points after a mission is selected.
+        - To increase point value drop all 3 Booster Targets 3 (Bonus
+          Activated) or 4 (Bonus Hold) consecutive times.
+                * When the Bonus is Activated points are added to the Bonus 
+as
+                  they are accumulated on the board.
+                * The Bonus is reset to its base value when the ball drains
+                  unless the Bonus Hold is on.
+                * The maximum Bonus is 5,000,000 points.
+>Extra Ball
+        - Awarded when:
+                * All 3 Medal Targets are dropped 3 consecutive times
+                * An Out-Lane is passed while the Out-Lane Light is lit.
+
+>To light the Out-Lane Lights enter the Hyperspace Kicker 4 consecutive 
+>times.
+        - The maximum number of Extra Balls is unlimited.
+                * Fixed value: 0 points
+
+>Field Multiplier
+        - Awarded when all 3 Multiplier Targets are dropped.
+                * Fixed value: 1500 points
+
+>Flag Upgrade
+        - All 3 Booster Targets are dropped for the 1st time.
+                * Upgraded value: 2500 points per ¿ spin
+
+>Hyperspace Bonus
+        - Awarded when the Ball enters the Hyperspace Kicker the first time.
+                * Fixed value: 10,000 points
+
+>Jackpot
+        - The Ball enters the Hyperspace Kicker the 2 consecutive times.
+                * Base value: 20,000 points
+        - Drop all 3 Booster Targets 2 consecutive times.
+                * When the Jackpot is Activated points are added to the 
+Jackpot
+                  as they are accumulated on the board.
+                * The Jackpot is reset when it is awarded or ball drains.
+
+>Replay Ball
+        - Awarded when the Ball enters an active Wormhole and exits same.
+                * Fixed value: 2500 points
+        - To rotate the Wormhole exit roll the Flags or hit the Wormhole
+          Target.
+
+>Skill Shot
+        - Awarded when the Ball enters the Hyperspace Kicker or passes the
+          Launch Ramp soon after it exits same.
+                * Fixed value: 25,000 points
+
+===============================================================================
+Cheat Codes
+===============================================================================
+>Use the cheat codes to play different levels, practice or examine specific
+  table functions.
+
+>Type cheat codes during game play.  No points are awarded for entering 
+>cheat
+  codes.
+
+>Scores achieved while using the "Max Codes" cannot be added to the 'High
+  Scores List'; however, scores achieved using the "hidden test" code can be
+  added to the 'High Scores List'.
+
+>Be careful using the codes if you want your High Scores to remain 'pure'.
+
+Max Codes
+------------------------------
+>"1max"
+        - Type this code multiple times to get more Extra Balls.
+
+>"bmax"
+        - Unlimited Balls are awarded
+        - If the Ball drains a new Ball will be kicked from the Yellow 
+Wormhole
+          automatically.
+        - To cancel this code 'Tilt' the table.
+
+>"gmax"
+        - Activates the Gravity Well.
+
+>"rmax"
+        - Increases the number of Rank Lights by 1.
+        - Type this code multiple times to further increase rank.
+
+Test Codes
+------------------------------
+>"hidden_test"
+        - Enters 'Test Mode'
+        - Allows the Ball to be moved with the mouse by clicking & holding 
+in
+          the game window.
+        - Use the following keys after the 'hidden_test' code has been 
+entered:
+                * "h" - Changes the 2nd place score to 1,000,000,000 and 
+allows
+                  the Player name to be entered.  Does not change 1st place,
+                  even if it's less that 1 Billion points.
+                * "m" - Displays the system memory in a separate window.
+                * "r" - Increases the number of Rank Lights by 1.
+                * "y" - Displays the game frame-rate in the title bar.
+
+===============================================================================
+Advice & Strategy
+===============================================================================
+This section is intended to aid new players in increasing both their score 
+and
+enjoyment of the game. Strategy and advice is subjective from my own 
+experience
+playing the game. If you don't agree or have an alternate strategy which 
+works
+for you then, by all means, use it.
+
+General Advice
+------------------------------
+>Be flexible.  Know what you want to do and set floating priorities and 
+>change
+  them as the table changes.
+
+>Always try to have a Replay available.
+
+>Play mainly to complete missions.
+
+>Enter the Hyperspace kick out as much as possible, except when it will 
+>result
+  in Gravity Well.
+
+>Be wary of the Gravity Well, it can make the Ball do funny things, plus it
+  resets the Hyperspace Lights.
+        - If it becomes active try and 'Normalize' gravity as quickly as
+          possible.
+        - It is advantageous to "activate" & "normalize" the Gravity Well 
+when
+          Field Multipliers are activated.
+
+>Don't get hung up on the Medal Targets.
+        - Fixating on them keeps you from scoring points else ware.
+        - Only try to hit them when the 2nd (orange) or 3rd (purple) Medal
+          Lights are lit.
+
+>Have a minimum point total and/or rank/progress you want to achieve for 
+>your
+  first Ball.
+        - If the Ball counter ticks to 2 before you're there, start a new 
+game.
+
+>Take advantage of the Field Multipliers when you get them (10x runs up the
+  score REALLY fast!).
+        - Field Multipliers don't apply to Bonuses, Awards & Jackpots.
+
+>The game moves different speeds depending on how many applications you have
+  running.
+        - Experiment running different applications in the background and 
+take
+          note of when you play better.
+
+>Even when the Center Post is up the Ball can still drain so be careful.
+  Don't let the Ball rest on the Center Post and one of the Flippers.
+
+Specific Advice
+------------------------------
+>If you have one of the upper level multipliers (3x, 5x or 10x) it's worth 
+>it
+  to get the Gravity Well, it can be worth up to 1.5 million points.
+
+>The Yellow Wormhole is easiest to hit, followed by the Red.  Try to use 
+>these
+  two to receive Replays.
+        - Both Wormholes can be hit from either flipper.
+
+>The far left Medal Target is hardest to hit.
+        - If it's already down and at least one Medal Light is lit try 
+aiming
+          for the remaining targets to get an Extra Ball.
+        - When deliberately aiming for the Medal Targets try and hit this 
+one
+          first.
+
+>If 2 or more Medal Lights are lit concentrate at hitting the Medal Targets.
+
+>When the Ball is kicked out of the Black Hole Kicker it will hit the middle
+  Medal Target if it is up.
+        - If this target is up the Ball will rebound into the right Out Lane
+          about 50% of the time.  Nudge the table to keep this from 
+happening.
+        - If this target is down the Ball will hit the right Medal Target 
+and
+          normally rebound to the upper part of the table.
+        - If both the middle & right Medal Targets are down the Ball will
+          bounce and hit the bottom Booster Target then rebound to the Left
+          Flipper.
+                * If the bottom Booster Target is down the Ball will bounce
+                  between the flippers and drain if the Center Post is not 
+up.
+
+>When the Ball is kicked out of the Hyperspace Kicker and the Left Flipper 
+>is
+  not hit the Ball will bounce & rebound up the Launch Ramp about 70% of the
+  time.
+        - If the wormholes are activated the Wormhole Exit Light will 
+normally
+          rotate 2 colors upon the Ball being kicked out of the Hyperspace
+          Kicker.
+        - Use this to catch the Ball on the Left Flipper and shoot it into 
+the
+          Yellow Wormhole to get a Replay.
+
+>There are a couple of tricks so only one mission needs to be completed to
+  upgrade the Rank Lights.
+        - See the FAQ for more information.
+
+Things to Get Good At
+------------------------------
+>Catching the Ball on the Flippers.
+        - Do this by holding the flipper keys so the Ball comes to rest on 
+the
+          Flippers before shooting the Ball up the table.
+        - This allows you to shoot the ball more accurately.
+
+>Sending the Ball up the Launch Ramp.
+        - Do this by shooting the Ball from the middle of the Right Flipper.
+        - This allows you to accept missions, Re-fuel, move the Ball from 
+Right
+          to Left Flipper.
+
+>Sending the Ball up the Hyperspace Chute.
+        - Do this by shooting the Ball from the end of the Left Flipper.
+        - This allows you to receive the Jackpot, the Center Post, chances 
+at
+          an Extra Ball and the Gravity Well.
+
+>Sending the Ball up the Fuel Chute.
+        - Do this by shooting the Ball from the end of the Right Flipper.
+        - This allows you to Re-fuel, get the Ball to the Green Wormhole, 
+and
+          get the Ball to the Re-Entry Lanes.
+
+>Sending the Ball into the Yellow Wormhole.
+        - Do this by shooting the Ball from the tip of the Left Flipper.
+        - This allows you to get a Replay Ball when the Wormhole Exit Light 
+is
+          Yellow.
+
+>Launch Ramp Skill Shots.
+        - Do this by catching the Ball with the Left Flipper as it drops
+          through the Bonus Lane, but not allowing it to come to rest.  When 
+it
+          bounces out over the left Flipper shoot it back up the Launch 
+Ramp.
+        - This allows you to complete missions and receive Skill Shot 
+Awards.
+
+>Hyperspace Skill Shots.
+        - Do this by ''one timing" the Ball back up the chute with the Left
+          Flipper.
+        - This allows you to receive the Jackpot, the Center Post, chances 
+at
+          an Extra Ball and the Gravity Well.
+
+>Hitting the left Medal Target.
+        - Do this by shooting the Ball from the middle of the Right Flipper 
+or
+          using the Launch Ramp Skill Shot technique from the Left Flipper.
+        - This allows you to receive Commendations & Extra Balls.
+
+===============================================================================
+Frequently Asked Question (FAQ) & Comments
+===============================================================================
+>What's your high score?
+        - 62,689,750 (that's over 62.6 million) with no cheating.
+        - My low high score (5th highest) is just over 42 million.
+
+>Only 62 Million?
+        - I actually may have been able to get more points, but I was 
+playing
+          under the (incorrect) impression that if you got 18 progress 
+lights
+          with a rank of Fleet Admiral that the game would freeze and you
+          wouldn't be able to post your high score.
+
+>Where'd you get all this information? How did you complile this guide?
+        - I began by playing (a lot) and noting my observations.
+        - I used the cheat codes (especially "hidden_test") to test what
+          happend in different scenarios, note how many points different
+          elements were worth and validate my observations.
+
+>What happens if the score board 'rolls over' (score reaches 1 billion)?
+        - It resets to 0 and then continues to accumulate points as normal.
+        - The game cannot accept high scores over 1 Billion points.
+
+>How do the Jackpots/Bonuses work?
+        - It's complicated.
+        - See the Bonus', Jackpots & Awards Section.
+
+>I've heard of some game 'bugs', what are they?
+        - The game freezes if you advance beyond the rank of Fleet Admiral.
+                * This doesn't happen on my version.  I'm not sure if it 
+ever
+                  did happen.
+                * If you reach the rank of Fleet Admiral just keep 
+completing
+                  missions to rack up major points.
+                * If you're worried about the possibility use the cheat 
+codes
+                  and check for yourself. (That's what I did.)
+        - I seemed to have skipped a rank.  How did this happen?
+                * If the rank is upgraded an a new mission is accepted 
+before
+                  the Progress Lights stop blinking in celebration then all 
+the
+                  Progress Lights remain lit and only the current mission 
+has
+                  to be completed to increase in rank again.
+                * If the rank is upgraded by completing the 4th (all Mission
+                  Targets) mission at any given rank and the Ball drains 
+before
+                  the Progress Lights stop blinking in celebration then all 
+the
+                  Progress Lights remain lit and only one mission has to be
+                  completed to increase in rank again.
+                        > If the same technique is used to complete the new
+                          rank the result repeats itself.
+                        > A new Ball will be deployed and the board reset 
+when
+                          the Ball is drained so have an extra Ball 
+available.
+                        > This technique does not work when the Replay Light 
+is
+                          lit.
+        - The Ball went through my flipper!  Aaaargh!!!
+                * This has happed to me once or twice.
+                * I don't know what causes it and, yes, it is very annoying.

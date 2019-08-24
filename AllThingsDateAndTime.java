@@ -4,6 +4,7 @@ import static java.time.temporal.TemporalAdjusters.lastDayOfYear;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
@@ -236,7 +237,18 @@ public class AllThingsDateAndTime {
 		System.out.println();
 
 
-		//Convert epoch value to usable timestamp
+		//Convert epoch value to usable timestamp #1 method
+		Instant testInstant = Instant.now();
+		System.out.println(testInstant.getEpochSecond());
+		System.out.println("TI: " + testInstant.toString());
+		Instant accountInstant = Instant.ofEpochMilli(todayDate.getTime() - 3600 * 1000);
+		System.out.println(accountInstant);
+
+
+		System.out.println();
+
+
+		//Convert epoch value to usable timestamp #1 method
 		long createDate = System.currentTimeMillis();
 		Date date = new Date(createDate);
 		DateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -341,8 +353,7 @@ public class AllThingsDateAndTime {
 		}
 	}
 
-	public static String calculateEndDate(Date startDate, int duration)
-	{      
+	public static String calculateEndDate(Date startDate, int duration) {      
 		Calendar startCal = Calendar.getInstance();
 
 		startCal.setTime(startDate);
@@ -364,8 +375,7 @@ public class AllThingsDateAndTime {
 		return finalBixDayMMMdd;
 	}
 
-	public static int calculateDuration(Date startDate, Date endDate)
-	{
+	public static int calculateDuration(Date startDate, Date endDate) {
 		Calendar startCal = Calendar.getInstance();
 		startCal.setTime(startDate);
 

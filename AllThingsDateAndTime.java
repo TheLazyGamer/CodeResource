@@ -248,7 +248,7 @@ public class AllThingsDateAndTime {
 		System.out.println();
 
 
-		//Convert epoch value to usable timestamp #1 method
+		//Convert epoch value to usable timestamp #2 method
 		long createDate = System.currentTimeMillis();
 		Date date = new Date(createDate);
 		DateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

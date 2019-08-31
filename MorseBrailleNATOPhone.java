@@ -133,6 +133,57 @@ public class MorseBrailleNATOPhone {
 
 		System.out.println();
 		processPhoneWords(userString);
+		System.out.println();
+		processBinary(userString);
+	}
+
+	private static void processBinary(String userString) {
+
+		boolean binaryString = true;
+		for (int i = 0; i < userString.length() && binaryString; i++) {
+			char c = userString.charAt(i);
+			if (c != '0' && c != '1' && c != ' ') {
+				binaryString = false;
+			}
+		}
+
+
+		if (binaryString) {
+			userString = userString.trim();
+
+			if (!userString.contains(" ")) {
+				userString = insertPeriodically(userString, " ", 8);
+			}
+
+			String translation = "";
+
+			try {
+				for (int index = 0; index < userString.length(); index+=9) {
+					String temp = userString.substring(index, index+8);
+					int num = Integer.parseInt(temp,2);
+					char letter = (char) num;
+					translation = translation + letter;
+				}
+
+				System.out.print("Your binary in string:\n" + translation);
+			}
+			catch (StringIndexOutOfBoundsException ex) {
+				System.out.println("Invalid binary. Added or missing numbers.");
+			}
+		}
+		else {
+			byte[] bytes = userString.getBytes();
+			StringBuilder binary = new StringBuilder();
+			for (byte b : bytes) {
+				int val = b;
+				for (int i = 0; i < 8; i++) {
+					binary.append((val & 128) == 0 ? 0 : 1);
+					val <<= 1;
+				}
+				binary.append(' ');
+			}
+			System.out.println("Your string in binary:\n" + binary);
+		}
 	}
 
 	private static void processPhoneWords(String userString) {
@@ -212,6 +263,22 @@ public class MorseBrailleNATOPhone {
 				return i;
 			}
 		return -1;
+	}
+
+	public static String insertPeriodically(String text, String insert, int period) {
+		StringBuilder builder = new StringBuilder(text.length() + insert.length() * (text.length()/period)+1);
+
+		int index = 0;
+		String prefix = "";
+		while (index < text.length()) {
+			// Don't put the insert in the very first iteration.
+			// This is easier than appending it *after* each substring
+			builder.append(prefix);
+			prefix = insert;
+			builder.append(text.substring(index, Math.min(index + period, text.length())));
+			index += period;
+		}
+		return builder.toString();
 	}
 
 }

@@ -8,7 +8,7 @@ import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 
 
-public class GetPixelRGB {
+public class GetPixelRGBColor {
 	public static void main(String[] argv) throws AWTException {
 		Robot bot = new Robot();
 		while(true) {

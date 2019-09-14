@@ -11,7 +11,7 @@ public class NotResponding {
 
 		while ((respondingLog = programsResponding.readLine()) != null) {
 			respondingLog = respondingLog.trim();
-			System.out.println("Found2 " + respondingLog);
+			System.out.println(respondingLog);
 		}
 
 		programsResponding.close();

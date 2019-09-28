@@ -26,6 +26,24 @@ public class AllThingsDateAndTime {
 
 		System.out.println();
 
+		
+		//Subtract years from a day, add days, and minus days
+		DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		LocalDate localDate = LocalDate.parse("01/31/2015", formatter2);
+		LocalDate yearBefore = localDate.minusYears(2).plusDays(5).minusDays(1);
+		System.out.println(yearBefore);
+
+
+		System.out.println
+
+
+		//Create a specific date and time from scratch, subtract X days from it, then format it to yyyy-MM-ddThh:mm:ssZ
+		String previousTime = DateTimeFormatter.ISO_INSTANT.format(Instant.now().minus(180, ChronoUnit.DAYS));
+		System.out.println(previousTime);
+
+
+		System.out.println();
+
 
 		//Create a specific date and time from scratch, add a day to it, then format it
 		SimpleDateFormat monthDateFormat = new SimpleDateFormat("MM/dd");
@@ -133,16 +151,6 @@ public class AllThingsDateAndTime {
 		System.out.println(cal4.getTime().toString());
 		cal4.set(Calendar.DAY_OF_YEAR, 366);
 		System.out.println(cal4.getTime().toString());
-
-
-		System.out.println();
-
-
-		//Subtract years from a day, add days, and minus days
-		DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-		LocalDate localDate = LocalDate.parse("01/31/2015", formatter2);
-		LocalDate yearBefore = localDate.minusYears(2).plusDays(5).minusDays(1);
-		System.out.println(yearBefore);
 
 
 		System.out.println();

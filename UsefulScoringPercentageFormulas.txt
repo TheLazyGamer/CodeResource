@@ -1,3 +1,8 @@
+qpdf --decrypt OriginalMasterFile.pdf UnlockedFile.pdf
+ocrmypdf UnlockedFile.pdf FinalOutputFile.pdf --force-ocr
+
+
+
 To calculate a useful winning percentage, to avoid 1/1 showing 100% and being better than 999/1000
 (# of games won + 1) / (# of games played + 2)
  

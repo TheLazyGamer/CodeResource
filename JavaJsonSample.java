@@ -1,6 +1,3 @@
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
 import java.io.StringReader;
 import java.io.StringWriter;
 import java.util.HashMap;
@@ -9,6 +6,7 @@ import java.util.Map;
 import javax.json.Json;
 import javax.json.JsonArray;
 import javax.json.JsonArrayBuilder;
+import javax.json.JsonNumber;
 import javax.json.JsonObject;
 import javax.json.JsonObjectBuilder;
 import javax.json.JsonReader;
@@ -25,7 +23,8 @@ public class JavaJsonSample {
 				"	\"daily-values\": {" +
 				"		\"total-fat\": {" +
 				"			\"units\": \"g\"," +
-				"			\"text\": 65" +
+				"			\"text\": 65," +
+				"			\"translated\": 1234567890123456789" +
 				"		}," +
 				"		\"saturated-fat\": {" +
 				"			\"units\": \"g\"," +
@@ -334,6 +333,9 @@ public class JavaJsonSample {
 		System.out.println(totalFat);
 		System.out.println("Units   : " + totalFat.getString("units"));
 		System.out.println("Text    : " + totalFat.getInt("text"));
+		JsonNumber translatedNum = totalFat.getJsonNumber("translated");
+		long transLong = translatedNum.longValue();
+		System.out.println("TranslatedNum    : " + transLong);
 		System.out.println(totalFat);
 
 		totalFat = removeProperty(totalFat, "text");

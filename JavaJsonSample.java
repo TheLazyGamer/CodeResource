@@ -24,7 +24,7 @@ public class JavaJsonSample {
 				"		\"total-fat\": {" +
 				"			\"units\": \"g\"," +
 				"			\"text\": 65," +
-				"			\"translated\": 1234567890123456789" +
+				"			\"translated\": 1234567890123456789.5" +
 				"		}," +
 				"		\"saturated-fat\": {" +
 				"			\"units\": \"g\"," +
@@ -335,8 +335,11 @@ public class JavaJsonSample {
 		System.out.println("Text    : " + totalFat.getInt("text"));
 		JsonNumber translatedNum = totalFat.getJsonNumber("translated");
 		long transLong = translatedNum.longValue();
-		System.out.println("TranslatedNum    : " + transLong);
-		System.out.println(totalFat);
+		double transDouble = translatedNum.doubleValue();
+		System.out.println("translatedNum    : " + translatedNum);
+		System.out.println("transLong    : " + transLong);
+		System.out.println("double    : " + transDouble);
+		System.out.println("totalFat    : " + totalFat);
 
 		totalFat = removeProperty(totalFat, "text");
 		System.out.println("new1 TF: " + totalFat);

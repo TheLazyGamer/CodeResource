@@ -18,4 +18,5 @@ javac -cp selenium-server-standalone-2.53.0.jar Bot.java
 java -cp selenium-server-standalone-2.53.0.jar;. Bot
 
 //Compile without jars, but with arguments (works the same with jars)
-javac Bot.java John Doe 43 -1 true
+javac Bot.java
+java Bot John Doe 43 -1 true

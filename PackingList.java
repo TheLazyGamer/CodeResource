@@ -13,7 +13,7 @@ public class PackingList {
 				"Belt", "Pants/Jeans", "Backup Battery Charged", "Glasses", "Glasses Case", "Travel Snacks",
 				"Tip Money", "Jacket", "Handkerchiefs", "Deodorant", "Tissues", "Hand Sanitizer", "Trash Bag (dirty clothes)",
 				"Rubberbands", "Wax", "WaterPik", "Retainers", "Toiletry Bag", "Tongue Brush", "Bank Travel Notice",
-				"Computer Reboot and TeamViewer check", "Medications (if any)", "USB Flash Drive"};
+				"Computer Reboot and TeamViewer check", "Medications (if any)", "USB Flash Drive", "Water Bottle", "Pocketknife (for needle)", "Nose Lotion"};
 		List<String> convertList = Arrays.asList(stableItems);
 		ArrayList<String> finalList = new ArrayList<String>(convertList);
 		Scanner input = new Scanner(System.in);
@@ -72,14 +72,9 @@ public class PackingList {
 			finalList.add("Body Wash");
 		}
 
-		System.out.println("Are you driving? true/false (adds Water Bottle, Pocketknife, Nose Lotion ~else~ Plane Ticket)");
-		boolean isDriving = input.nextBoolean();
-		if (isDriving) {
-			finalList.add("Water Bottle");
-			finalList.add("Pocketknife (for needle)");
-			finalList.add("Nose Lotion");
-		}
-		else {
+		System.out.println("Are you flying? true/false (adds Plane Ticket and Check-in)");
+		boolean isFlying = input.nextBoolean();
+		if (isFlying) {
 			finalList.add("Plane Ticket");
 			finalList.add("Google Calendar check in for arrival and departure");
 		}
@@ -92,6 +87,10 @@ public class PackingList {
 
 		if (totalNights > 3) {
 			finalList.add("Electric toothbrush charger");
+		}
+
+		if (totalNights > 5) {
+			finalList.add("Laundry Detergeant");
 		}
 
 

@@ -325,7 +325,7 @@ public class JavaJsonSample {
 				"	]" +
 				"}";
 
-		JsonObject dietObject = convertAPIOutputToJson(jsonSample);
+		JsonObject dietObject = convertAPIOutputToJson(jsonSample); //Use escape to clean up the invalid json chars
 
 		JsonObject dvObject = dietObject.getJsonObject("daily-values");
 
@@ -548,6 +548,20 @@ public class JavaJsonSample {
 		jsonWriter.close();
 
 		return stringWriter.toString();
+	}
+
+	//Don't use this on string manually built out, like jsonSample. Only on broken json strings.
+	private static String escape(String raw) {
+		String escaped = raw;
+		escaped = escaped.replace("\\", "\\\\");
+		escaped = escaped.replace("\"", "\\\"");
+		escaped = escaped.replace("\b", "\\b");
+		escaped = escaped.replace("\f", "\\f");
+		escaped = escaped.replace("\n", "\\n");
+		escaped = escaped.replace("\r", "\\r");
+		escaped = escaped.replace("\t", "\\t");
+		// TODO: escape other non-printing characters using uXXXX notation
+		return escaped;
 	}
 
 

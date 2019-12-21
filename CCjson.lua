@@ -1,4 +1,4 @@
-EXAMPLE
+EXAMPLE --6qmBBLpz
 os.loadAPI("json")
 str = http.get("http://www.someserver.com/").readAll()
 obj = json.decode(str)

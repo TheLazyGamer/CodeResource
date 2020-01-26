@@ -110,7 +110,7 @@ public class PackingList {
 			System.out.println("Don't bother bringing your electric toothbrush charger.");
 		}
 		System.out.println("Please manually include any special scenario items");
-		
+
 		input.close();
 	}
 }

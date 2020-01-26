@@ -13,7 +13,8 @@ public class PackingList {
 				"Belt", "Pants/Jeans", "Backup Battery Charged", "Glasses", "Glasses Case", "Travel Snacks",
 				"Tip Money", "Jacket", "Handkerchiefs", "Deodorant", "Tissues", "Hand Sanitizer", "Trash Bag (dirty clothes)",
 				"Rubberbands", "Wax", "WaterPik", "Retainers", "Toiletry Bag", "Tongue Brush", "Bank Travel Notice",
-				"Computer Reboot and TeamViewer check", "Medications (if any)", "USB Flash Drive", "Water Bottle", "Pocketknife (for needle)", "Nose Lotion"};
+				"Computer Reboot and TeamViewer check", "Medications (if any)", "USB Flash Drive", "Water Bottle", "Pocketknife (for needle)", "Nose Lotion",
+				"Clean Ears", "Shave Pits", };
 		List<String> convertList = Arrays.asList(stableItems);
 		ArrayList<String> finalList = new ArrayList<String>(convertList);
 		Scanner input = new Scanner(System.in);
@@ -35,6 +36,10 @@ public class PackingList {
 		if (isBusiness) {
 			finalList.add("Dress Shoes");
 			finalList.add((totalNights+1) + " Dress Shirts");
+
+			if (totalNights > 7) {
+				finalList.add("Laundry Detergeant");
+			}
 		}
 
 		System.out.println("Are you seeing your partner? true/false (adds Condoms, Lube)");
@@ -86,7 +91,7 @@ public class PackingList {
 		}
 
 		if (totalNights > 3) {
-			finalList.add("Electric toothbrush charger");
+			finalList.add("Electric Toothbrush Charger");
 		}
 
 		if (totalNights > 5) {

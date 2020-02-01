@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MorseBrailleNATOPhone {
+	//TODO somehow add International Code of Signals
 	public static String[] numbers = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "0"};
 	public static String[] letters = {"", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz", ""};
 	public static ArrayList<String> allEnglishWordsList = new ArrayList<String>();

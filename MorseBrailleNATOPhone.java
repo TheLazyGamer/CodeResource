@@ -24,6 +24,45 @@ public class MorseBrailleNATOPhone {
 				'+', '-', '*', '"', '\'', '<', '>', '(', ')',
 		'_'};
 
+		String[] semaphoreArr = {
+				"Right-hand: Bottom right. Left-hand: Down.", //A
+				"Right-hand: Right. Left-hand: Down.", //B
+				"Right-hand: Top right. Left-hand: Down.", //C
+				"Right-hand: Up. Left-hand: Down.", //D
+				"Right-hand: Down. Left-hand: Top left.", //E
+				"Right-hand: Down. Left-hand: Left.", //F
+				"Right-hand: Down. Left-hand: Bottom left.", //G
+				"Right-hand: Right. Left-hand: Bottom right.", //H
+				"Right-hand: Top right. Left-hand: Bottom right.", //I
+				"Right-hand: Up. Left-hand: Left.", //J
+				"Right-hand: Bottom right. Left-hand: Up.", //K
+				"Right-hand: Bottom right. Left-hand: Top left.", //L
+				"Right-hand: Bottom right. Left-hand: Left.", //M
+				"Right-hand: Bottom right. Left-hand: Bottom left.", //N
+				"Right-hand: Top right. Left-hand: Right.", //O
+				"Right-hand: Right. Left-hand: Up.", //P
+				"Right-hand: Right. Left-hand: Top left.", //Q
+				"Right-hand: Right. Left-hand: Left.", //R
+				"Right-hand: Right. Left-hand: Bottom left.", //S
+				"Right-hand: Top right. Left-hand: Up.", //T
+				"Right-hand: Top right. Left-hand: Top left.", //U
+				"Right-hand: Up. Left-hand: Bottom Left.", //V
+				"Right-hand: Left. Left-hand: Top left.", //W
+				"Right-hand: Bottom left. Left-hand: Top left.", //X
+				"Right-hand: Top right. Left-hand: Left.", //Y
+				"Right-hand: Bottom left. Left-hand: Left.", //Z
+				"Right-hand: Bottom right. Left-hand: Down.", //1
+				"Right-hand: Right. Left-hand: Down.", //2
+				"Right-hand: Top right. Left-hand: Down.", //3
+				"Right-hand: Up. Left-hand: Down.", //4
+				"Right-hand: Down. Left-hand: Top left.", //5
+				"Right-hand: Down. Left-hand: Left.", //6
+				"Right-hand: Down. Left-hand: Bottom left.", //7
+				"Right-hand: Right. Left-hand: Bottom right.", //8
+				"Right-hand: Top right. Left-hand: Bottom right.", //9
+				"Right-hand: Bottom right. Left-hand: Up.", //0
+		};
+
 		String[] numberBrailleArr = {"100000", "101000", "110000", "110100", "100100", "111000", "111100", "101100", "011000"
 				, "011100", "100010", "101010", "110010", "110110", "100110", "111010", "111110", "101110"
 				, "011010", "011110", "100011", "101011", "011101", "110011", "110111", "100111Z", "100000",
@@ -53,11 +92,13 @@ public class MorseBrailleNATOPhone {
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("Please enter the string you want converted: ");
-		String userString = input.nextLine().toLowerCase();
+		String originalString = input.nextLine();
+		String userString = originalString.toLowerCase();
 		input.close();
 
 		char[] userChars = userString.toCharArray();
-		//System.out.println("This is userString " + userString );
+		char[] originalChars = originalString.toCharArray();
+
 		String morseString = "";
 		String telephString = "";
 		String brailleString1 = "";
@@ -65,10 +106,7 @@ public class MorseBrailleNATOPhone {
 		String brailleString3 = "";
 		for (int x = 0; x < userChars.length; x++) {
 			char userChar = userChars[x];
-			//	if (userChar.isUpperCase()) {
-			//TODO check if letter is uppercase, so braille capital symbol can be used
-			//}
-			//		System.out.println("This is x: " + userChars[x] + "|");
+
 			if (userChar == ' ') {
 				if (morseString == "") {
 					morseString = " ";
@@ -78,11 +116,11 @@ public class MorseBrailleNATOPhone {
 					brailleString3 = " ";
 				}
 
-				morseString = morseString.substring(0, morseString.length() - 1) + " ";
-				telephString = telephString.substring(0, telephString.length() - 1) + " ";
-				brailleString1 = brailleString1.substring(0, brailleString1.length() - 1) + " ";
-				brailleString2 = brailleString2.substring(0, brailleString2.length() - 1) + " ";
-				brailleString3 = brailleString3.substring(0, brailleString3.length() - 1) + " ";
+				morseString = morseString.substring(0, morseString.length() - 1) + "    ";
+				telephString = telephString.substring(0, telephString.length() - 1) + "    ";
+				brailleString1 = brailleString1.substring(0, brailleString1.length() - 1) + "    ";
+				brailleString2 = brailleString2.substring(0, brailleString2.length() - 1) + "    ";
+				brailleString3 = brailleString3.substring(0, brailleString3.length() - 1) + "    ";
 			}
 
 			else {
@@ -108,6 +146,13 @@ public class MorseBrailleNATOPhone {
 				for (; z < alphaBrailleArrLen; z++) {
 					if (alphaBrailleArr[z] == userChar) {
 						String userBraille = numberBrailleArr[z];
+
+						if (Character.isUpperCase(originalChars[x])) {
+							brailleString1 = brailleString1 + "oo,";
+							brailleString2 = brailleString2 + "oo,";
+							brailleString3 = brailleString3 + "o@,";
+						}
+
 						brailleString1 = brailleString1 + userBraille.substring(0, 2).replace("0", "o").replace("1", "@") + ",";
 						brailleString2 = brailleString2 + userBraille.substring(2, 4).replace("0", "o").replace("1", "@") + ",";
 						brailleString3 = brailleString3 + userBraille.substring(4, 6).replace("0", "o").replace("1", "@") + ",";
@@ -135,6 +180,54 @@ public class MorseBrailleNATOPhone {
 		processPhoneWords(userString);
 		System.out.println();
 		processBinary(userString);
+		System.out.println();
+		processSemaphore(userString, alphaArr, semaphoreArr);
+	}
+
+	private static void processSemaphore(String userString, char[] alphaArr, String[] semaphoreArr) {
+		System.out.println("Your string in semaphore:");
+		String cleanedString = userString.replaceAll("[^a-zA-Z 0-9]", "");
+		cleanedString = cleanedString.toLowerCase();
+		cleanedString = cleanedString.replace("  ", " ");
+		String[] cleanedArr = cleanedString.split("(?!^)");
+		for (int x = 0; x < cleanedArr.length; x++) {
+			String cleanedAlphaNum = cleanedArr[x];
+			char[] userChars = cleanedAlphaNum.toCharArray();
+			char userChar = userChars[0];
+
+			if (cleanedAlphaNum.equals(" ")) {
+				System.out.println("Right-hand: Down. Left-hand: Down."); //Space
+			}
+			else if (cleanedAlphaNum.matches("[0-9]+")) {
+
+				//Check if we need to announce we are now using a number
+				if (x == 0 || cleanedArr[x-1].matches("[a-zA-Z]+") || (x > 1 && cleanedArr[x-2].matches("[a-zA-Z]+") && cleanedArr[x-1].equals(" "))) {
+					System.out.println("Right-hand: Up. Left-hand: Top left."); //#
+				}
+
+				for (int y = 0; y < alphaArr.length; y++) {
+					if (alphaArr[y] == userChar) {
+						System.out.println(semaphoreArr[y]);
+						break;
+					}
+				}
+			}
+			else if (cleanedAlphaNum.matches("[a-zA-Z]+")) {
+
+				//Check if we need to announce we are now using a letter
+				if (x == 0 || cleanedArr[x-1].matches("[0-9]+") || (x > 1 && cleanedArr[x-2].matches("[0-9]+") && cleanedArr[x-1].equals(" "))) {
+					System.out.println("Right-hand: Up. Left-hand: Left."); //Letter
+				}
+
+				for (int y = 0; y < alphaArr.length; y++) {
+					if (alphaArr[y] == userChar) {
+						System.out.println(semaphoreArr[y]);
+						break;
+					}
+				}
+			}
+		}
+
 	}
 
 	private static void processBinary(String userString) {
@@ -208,7 +301,7 @@ public class MorseBrailleNATOPhone {
 				}
 			}
 
-			System.out.println("Your word converted to a number: " + number);
+			System.out.println("Your word converted to a phone number: " + number);
 		}
 	}
 	private static void getFittingWords(String remainingNumber, String builtPhrase) {

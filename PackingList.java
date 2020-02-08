@@ -14,7 +14,7 @@ public class PackingList {
 				"Tip Money", "Jacket", "Handkerchiefs", "Deodorant", "Tissues", "Hand Sanitizer", "Trash Bag (dirty clothes)",
 				"Rubberbands", "Wax", "WaterPik", "Retainers", "Toiletry Bag", "Tongue Brush", "Bank Travel Notice",
 				"Computer Reboot and TeamViewer check", "Medications (if any)", "USB Flash Drive", "Water Bottle", "Pocketknife (for needle)", "Nose Lotion",
-				"Clean Ears", "Shave Pits", "Plastic Shopping Bag To Hold Ice"};
+				"Clean Ears", "Shave Pits", "Plastic Shopping Bag To Hold Ice", "Restock Index Cards"};
 		List<String> convertList = Arrays.asList(stableItems);
 		ArrayList<String> finalList = new ArrayList<String>(convertList);
 		Scanner input = new Scanner(System.in);

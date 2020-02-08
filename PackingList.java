@@ -17,6 +17,7 @@ public class PackingList {
 				"Clean Ears", "Shave Pits", "Plastic Shopping Bag To Hold Ice", "Restock Index Cards"};
 		List<String> convertList = Arrays.asList(stableItems);
 		ArrayList<String> finalList = new ArrayList<String>(convertList);
+
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("How many nights are you staying?");

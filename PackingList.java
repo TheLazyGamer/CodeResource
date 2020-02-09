@@ -102,10 +102,6 @@ public class PackingList {
 			finalList.add("Electric Toothbrush Charger");
 		}
 
-		if (totalNights > 5) {
-			finalList.add("Laundry Detergeant");
-		}
-
 
 		Collections.sort(finalList);
 		System.out.println();

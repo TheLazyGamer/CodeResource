@@ -100,6 +100,10 @@ public class PackingList {
 
 		if (totalNights > 3) {
 			finalList.add("Electric Toothbrush Charger");
+
+			if (isBusiness) {
+				finalList.add("Plastic Cutlery");
+			}
 		}
 
 

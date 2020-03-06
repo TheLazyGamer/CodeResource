@@ -9,8 +9,7 @@ public class RenameFilesInFolder
 	public static void main(String[] argv) throws IOException 
 	{ 
 		// Path of folder where files are located 
-		String folder_path = 
-				"C:\\Users\\USERNAME\\Music"; 
+		String folder_path = "C:\\Users\\USERNAME\\Music"; 
 
 		// creating new folder 
 		File myfolder = new File(folder_path); 

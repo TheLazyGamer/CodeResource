@@ -27,7 +27,7 @@ public class AllThingsDateAndTime {
 
 		System.out.println();
 
-		
+
 		//Subtract years from a day, add days, and minus days
 		DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("MM/dd/yyyy");
 		LocalDate localDate = LocalDate.parse("01/31/2015", formatter2);
@@ -298,6 +298,18 @@ public class AllThingsDateAndTime {
 		SimpleDateFormat futureFormat = new SimpleDateFormat("MM/dd/yyyy");
 		Date futureDate = futureFormat.parse("08/08/2020");
 		System.out.println(calculateDuration(presentDate, futureDate));
+
+
+		System.out.println();
+
+
+		//Take ISO-8601 timestamp and only grab the seconds (not including adding minutes, hour or days in seconds)
+		String rawResponseTime = "00:01:02.9490000";
+
+		DateTimeFormatter inTime = DateTimeFormatter.ofPattern("HH:mm:ss.SSSSSSS");
+		DateTimeFormatter outTime = DateTimeFormatter.ofPattern("s.SSS");
+
+		System.out.println(outTime.format(inTime.parse(rawResponseTime)));
 
 	}
 

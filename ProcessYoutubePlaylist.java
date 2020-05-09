@@ -5,7 +5,7 @@ import java.io.IOException;
 public class ProcessYoutubePlaylist {
 	public static void main(String[] argv) throws IOException {
 		String fileLine = "";
-
+//To use, open up a playlist, then open chrome dev tools. Copy outerHTML of <html> root tag, and save to html file
 		boolean atNewVid = false;
 		try (BufferedReader br = new BufferedReader(new FileReader("/Users/USERNAME/Documents/playlist.html"))) {
 			while ((fileLine = br.readLine()) != null) {

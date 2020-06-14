@@ -1,3 +1,6 @@
+//Scrape a single subdirectory
+wget -r -l1 --no-parent http://www.domain.com/subdirectory/
+
 //Scrape a list of URLs, and grabbing only files with specific domains
 wget -wait=10 --random-wait -N -k -p -H -Dfurther.example.com,example.com -i articles.txt
 

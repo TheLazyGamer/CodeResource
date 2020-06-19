@@ -248,7 +248,7 @@ public class MorseBrailleNATOPhone {
 				}
 
 
-				if (goodZero || firstZero) { //The word has a zero preceeded by a number, or has no zeroes at all
+				if (goodZero || firstZero) { //The word has a zero preceded by a number, or has no zeroes at all
 
 					int firstTailLetterIndex = 0;
 
@@ -315,7 +315,7 @@ public class MorseBrailleNATOPhone {
 							String inputAlphaNum = inputArr[inputIndex];
 							if (inputAlphaNum.matches("[0-9]+")) {
 							}
-							else if (inputAlphaNum.matches("[A-Z]+")) { //We've come across a letter. TODO Check if we are at the start of our tail letters. If not, try to convert this letter. If we can't, break.
+							else if (inputAlphaNum.matches("[A-Z]+")) { //We've come across a letter. Check if we are at the start of our tail letters. If not, try to convert this letter. If we can't, break.
 								if (inputIndex == firstTailLetterIndex) {
 									goodWord = true;
 									break;

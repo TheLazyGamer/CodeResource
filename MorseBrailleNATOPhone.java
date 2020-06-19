@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MorseBrailleNATOPhone {
-	//TODO somehow add International Code of Signals https://en.wikipedia.org/wiki/International_Code_of_Signals 
+	//TODO somehow add International Code of Signals https://en.wikipedia.org/wiki/International_Code_of_Signals 
 	public static String[] numbers = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "0"};
 	public static String[] letters = {"", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz", ""};
 	public static ArrayList<String> allEnglishWordsList = new ArrayList<String>();
@@ -94,7 +94,7 @@ public class MorseBrailleNATOPhone {
 
 		System.out.println("Please enter the string you want converted: ");
 		String originalString = input.nextLine();
-		String userString = originalString.toLowerCase();
+		String userString = originalString.toLowerCase().trim();
 		input.close();
 
 		char[] userChars = userString.toCharArray();
@@ -117,11 +117,11 @@ public class MorseBrailleNATOPhone {
 					brailleString3 = " ";
 				}
 
-				morseString = morseString.substring(0, morseString.length() - 1) + "    ";
-				telephString = telephString.substring(0, telephString.length() - 1) + "    ";
-				brailleString1 = brailleString1.substring(0, brailleString1.length() - 1) + "    ";
-				brailleString2 = brailleString2.substring(0, brailleString2.length() - 1) + "    ";
-				brailleString3 = brailleString3.substring(0, brailleString3.length() - 1) + "    ";
+				morseString = morseString.substring(0, morseString.length() - 1) + "    ";
+				telephString = telephString.substring(0, telephString.length() - 1) + "    ";
+				brailleString1 = brailleString1.substring(0, brailleString1.length() - 1) + "    ";
+				brailleString2 = brailleString2.substring(0, brailleString2.length() - 1) + "    ";
+				brailleString3 = brailleString3.substring(0, brailleString3.length() - 1) + "    ";
 			}
 
 			else {
@@ -183,13 +183,145 @@ public class MorseBrailleNATOPhone {
 		processBinary(userString);
 		System.out.println();
 		processSemaphore(userString, alphaArr, semaphoreArr);
+		System.out.println();
+		processFAARegistry(userString);
+	}
+
+	private static void processFAARegistry(String userString) {
+		String[] tailLetters = {"I", "E", "A", "O", "S", "Z", "T", "B"};
+		String[] tailNumbers = {"1", "3", "4", "0", "5", "2", "7", "8"};
+
+		//for (int wordIndex = 0; wordIndex < allEnglishWordsList.size(); wordIndex++) {
+		//String backup = allEnglishWordsList.get(wordIndex);
+		//String inputString = allEnglishWordsList.get(wordIndex).toUpperCase();
+		String inputString = userString.toUpperCase();
+
+		if ((inputString.startsWith("N1") || inputString.startsWith("NI") || inputString.startsWith("NE") || inputString.startsWith("N3") || inputString.startsWith("NA") || inputString.startsWith("N4")) &&
+				(inputString.length() >= 3 && inputString.length() <= 6)) {
+			String[] inputArr = inputString.split("");
+
+			String remainder = inputString.substring(1, inputString.length());
+			if (remainder.matches("[0-9]+")) {
+				int remainderVal = Integer.parseInt(remainder);
+				if (remainderVal > 99) {
+					System.out.println("VALID TAIL NUMBER: " + inputString);
+					//This is a valid tail number, can take as is or try converting some letters to numbers for all combos	
+				}
+			}
+			else if (inputArr[inputArr.length - 1].matches("[A-Z]+") || find(inputArr[inputArr.length - 1], tailLetters) >= 0) {
+				boolean firstZero = true;
+
+
+				//Check if the character after N is a letter, in which case make it a number
+				int numberIndex = find(inputArr[1], tailLetters);
+				if (numberIndex >= 0) {
+					inputArr[1] = tailNumbers[numberIndex];
+				}
+
+				//Convert every I and O to 1 and 0, respectively
+				for (int inputIndex = 2; inputIndex < inputArr.length; inputIndex++) {
+					String inputAlphaNum = inputArr[inputIndex];
+					if (inputAlphaNum.equals("I") || inputAlphaNum.equals("O")) {
+						inputArr[inputIndex] = tailNumbers[find(inputArr[inputIndex], tailLetters)];
+					}
+				}
+
+				boolean goodZero = false;
+				//Now let's check for the first zero, if any, and if we need to make the char before a number (if possible
+				for (int inputIndex = 2; inputIndex < inputArr.length; inputIndex++) {
+					String inputAlphaNum = inputArr[inputIndex];
+					if (inputAlphaNum.equals("0") && firstZero) {
+						firstZero = false;
+						String charBefore = inputArr[inputIndex-1];
+						if (charBefore.matches("[0-9]+")) {
+							goodZero = true;
+							break;
+						}
+						else if (find(charBefore, tailLetters) >= 0) {
+							inputArr[inputIndex-1] = tailNumbers[find(charBefore, tailLetters)];
+							goodZero = true;
+							break;
+						}
+					}
+				}
+
+
+				if (goodZero || firstZero) { //The word has a zero preceeded by a number, or has no zeroes at all
+
+					int firstTailLetterIndex = 0;
+
+					int lettersInARow = 0;
+					for (int inputIndex = inputArr.length - 1; inputIndex >= 0; inputIndex--) {
+						String inputAlphaNum = inputArr[inputIndex];
+						if (inputAlphaNum.matches("[A-Z]+")) {
+							lettersInARow++;
+							firstTailLetterIndex = inputIndex;
+						}
+						else if (inputAlphaNum.matches("[0-9]+")) { //We've come across a number
+							if (lettersInARow == 0 && !inputAlphaNum.equals("0") && !inputAlphaNum.equals("1") && find(inputAlphaNum, tailNumbers) >= 0) { //If we don't even yet have a single letter, check if we can replace this number with a letter
+								lettersInARow++;
+								inputArr[inputIndex] = tailLetters[find(inputAlphaNum, tailNumbers)];
+							}
+							else {
+								break;
+							}
+						}
+
+						if (lettersInARow == 3) { //This is the third letter in a row, check if we can convert it to a number
+							if (find(inputAlphaNum, tailLetters) >= 0) {
+								lettersInARow--;
+								inputArr[inputIndex] = tailNumbers[find(inputAlphaNum, tailLetters)];
+								firstTailLetterIndex = inputIndex + 1;
+							}
+							else {
+								break;
+							}
+						}
+					}
+
+					if (lettersInARow == 1 || lettersInARow == 2) {
+						boolean goodWord = false;
+
+						for (int inputIndex = 2; inputIndex < inputArr.length; inputIndex++) {
+							String inputAlphaNum = inputArr[inputIndex];
+							if (inputAlphaNum.matches("[0-9]+")) {
+							}
+							else if (inputAlphaNum.matches("[A-Z]+")) { //We've come across a letter. TODO Check if we are at the start of our tail letters. If not, try to convert this letter. If we can't, break.
+								if (inputIndex == firstTailLetterIndex) {
+									goodWord = true;
+									break;
+								}
+								else if (find(inputAlphaNum, tailLetters) >= 0) {
+									inputArr[inputIndex] = tailNumbers[find(inputAlphaNum, tailLetters)];
+								}
+								else {
+									break;	
+								}
+
+							}
+						}
+						if (goodWord) {
+							System.out.print("VALID TAIL NUMBER: ");
+							for (int inputIndex = 0; inputIndex < inputArr.length; inputIndex++) {
+								System.out.print(inputArr[inputIndex]);
+							}
+						}
+					}
+
+				}
+
+				//}
+			}
+
+		}
+
 	}
 
 	private static void processSemaphore(String userString, char[] alphaArr, String[] semaphoreArr) {
 		System.out.println("Your string in semaphore:");
 		String cleanedString = userString.replaceAll("[^a-zA-Z 0-9]", "");
 		cleanedString = cleanedString.toLowerCase();
-		cleanedString = cleanedString.replace("  ", " ");
+		cleanedString = cleanedString.replace("  ", " ");
 		String[] cleanedArr = cleanedString.split("(?!^)");
 		for (int x = 0; x < cleanedArr.length; x++) {
 			String cleanedAlphaNum = cleanedArr[x];
@@ -314,6 +446,7 @@ public class MorseBrailleNATOPhone {
 
 			//We have a random English word whose length fits our remaining letters
 			if (potEngWord.length() <= remainingNumber.length() && (potEngWord.length() > 1 || (potEngWord.equals("a") || potEngWord.equals("i")))) {
+				//System.out.println("Good length: " + potEngWord);
 
 				String[] remainingNumberArr = remainingNumber.split("(?!^)");
 				String[] potEngWordArr = potEngWord.split("(?!^)");
@@ -321,7 +454,7 @@ public class MorseBrailleNATOPhone {
 				boolean foundValidWord = true;
 				//Loop thru the fitting English word, and check if its letters match our number's linked letters
 				for (int n = 0; n < potEngWordArr.length; n++) {
-					if (!letters[find(remainingNumberArr[n])].contains(potEngWordArr[n])) {
+					if (!letters[find(remainingNumberArr[n], numbers)].contains(potEngWordArr[n])) {
 						foundValidWord = false;
 						break;
 					}
@@ -349,13 +482,14 @@ public class MorseBrailleNATOPhone {
 	}
 
 	// Generic function to find the index of an element in an object array in Java
-	public static int find(String target)
+	public static int find(String target, String[] searchedArr)
 	{//numbers.indexOf(remainingNumberArr[n])])
-		for (int i = 0; i < numbers.length; i++)
-			if (target.equals(numbers[i])) {
+		for (int i = 0; i < searchedArr.length; i++) {
+			if (target.equals(searchedArr[i])) {
 				//System.out.println("Found " + target + " with " + numbers[i] + " at " + i);
 				return i;
 			}
+		}
 		return -1;
 	}
 

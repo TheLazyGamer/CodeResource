@@ -192,8 +192,9 @@ public class MorseBrailleNATOPhone {
 		String[] tailNumbers = {"1", "3", "4", "0", "5", "2", "7", "8"};
 
 		//for (int wordIndex = 0; wordIndex < allEnglishWordsList.size(); wordIndex++) {
-		//String backup = allEnglishWordsList.get(wordIndex);
 		//String inputString = allEnglishWordsList.get(wordIndex).toUpperCase();
+		//String backup = allEnglishWordsList.get(wordIndex);
+		String backup = userString;
 		String inputString = userString.toUpperCase();
 
 		if ((inputString.startsWith("N1") || inputString.startsWith("NI") || inputString.startsWith("NE") || inputString.startsWith("N3") || inputString.startsWith("NA") || inputString.startsWith("N4")) &&
@@ -209,6 +210,7 @@ public class MorseBrailleNATOPhone {
 				}
 			}
 			else if (inputArr[inputArr.length - 1].matches("[A-Z]+") || find(inputArr[inputArr.length - 1], tailLetters) >= 0) {
+
 				boolean firstZero = true;
 
 
@@ -262,6 +264,32 @@ public class MorseBrailleNATOPhone {
 								lettersInARow++;
 								inputArr[inputIndex] = tailLetters[find(inputAlphaNum, tailNumbers)];
 							}
+							else if (lettersInARow == 0) {
+								//The last letter doesn't work, so check if lettersInARow is 0 and if we can convert everything else to numbers
+								boolean allNumbers = true;
+								for (int numIndex = 2; numIndex < inputArr.length; numIndex++) {
+									String numCheck = inputArr[numIndex];
+									if (numCheck.matches("[A-Z]+")) {
+										if (find(numCheck, tailLetters) >= 0) {
+											inputArr[numIndex] = tailNumbers[find(numCheck, tailLetters)];
+										}
+										else {
+											allNumbers = false;
+											break;
+										}
+									}
+								}
+								if (allNumbers) {
+									System.out.print("VALID TAIL NUMBER: ");
+									for (int savedIndex = 0; savedIndex < inputArr.length; savedIndex++) {
+										System.out.print(inputArr[savedIndex]);
+									}
+									System.out.println(" FROM: " + backup);
+								}
+								else {
+									break;
+								}
+							}
 							else {
 								break;
 							}
@@ -280,6 +308,7 @@ public class MorseBrailleNATOPhone {
 					}
 
 					if (lettersInARow == 1 || lettersInARow == 2) {
+
 						boolean goodWord = false;
 
 						for (int inputIndex = 2; inputIndex < inputArr.length; inputIndex++) {
@@ -305,12 +334,13 @@ public class MorseBrailleNATOPhone {
 							for (int inputIndex = 0; inputIndex < inputArr.length; inputIndex++) {
 								System.out.print(inputArr[inputIndex]);
 							}
+							System.out.println(" FROM: " + backup);
 						}
 					}
 
-				}
+					//}
 
-				//}
+				}
 			}
 
 		}

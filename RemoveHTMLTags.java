@@ -29,7 +29,7 @@ public class RemoveHTMLTags {
 			}
 		}
 
-		return rawHtml.trim();
+		return rawHtml.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">").replace("&quot;", "\"").replace("&apos;", "'").trim();
 	}
 }
 

@@ -62,6 +62,17 @@ public class AllThingsDateAndTime {
 		String startDateMMdd = monthDateFormat.format(startDate);
 		System.out.println(startDate);
 		System.out.println(startDateMMdd);
+		
+		//Create formatted date and time based on customer input, add or subtract days #4
+		SimpleDateFormat formatterX = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
+		String rawCustomerString = "2001-07-04T12:08:56.235-07:00";
+		Date customerDate = formatterX.parse(rawCustomerString);
+		java.util.Calendar morphCal = java.util.Calendar.getInstance();
+		morphCal.setTime(customerDate);
+		morphCal.add(java.util.Calendar.DATE, 1);  // number of days to add
+
+		String newCustomerString = formatterX.format(morphCal.getTime()); //.getTime() returns a Date object
+		System.out.println(newCustomerString);
 
 
 		//Loop thru every day of a year

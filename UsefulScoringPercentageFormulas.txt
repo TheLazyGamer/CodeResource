@@ -1,3 +1,7 @@
+Now, I had already adopted, many years before, such syntactic convolutions as,
+“if(4 == a)” as opposed to, “if(a == 4)” in order to avoid the problem of “=“ vs “==“...
+
+
 //Scrape a single subdirectory
 wget -r -l1 --no-parent http://www.domain.com/subdirectory/
 

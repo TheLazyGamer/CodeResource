@@ -1,5 +1,27 @@
+public class BestPractices {
 Now, I had already adopted, many years before, such syntactic convolutions as,
 “if(4 == a)” as opposed to, “if(a == 4)” in order to avoid the problem of “=“ vs “==“...
+
+	public static void main(String[] argv) {
+		String myDog = "Fat";
+		boolean myDogIsFat = false;
+		//Instead of...
+		if (myDog.equals("Fat")) {
+			myDogIsFat = true;
+		}
+		else {
+			myDogIsFat = false;
+		}
+
+		//Do...
+		myDogIsFat = myDog.equals("Fat");
+
+		System.out.println(myDogIsFat);
+	}
+}
+
+
+
 
 
 //Scrape a single subdirectory

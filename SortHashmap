@@ -1,0 +1,55 @@
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
+public class SortHashmap {
+	public static void main(String[] argv) {
+		HashMap<String, Integer> originalMap = new HashMap<String, Integer>();
+		originalMap.merge("Apple", 1, Integer::sum);
+		originalMap.merge("Apple", 1, Integer::sum);
+		originalMap.merge("Banana", 1, Integer::sum);
+		originalMap.merge("Apple", 1, Integer::sum);
+		originalMap.merge("Cucumber", 1, Integer::sum);
+		originalMap.merge("Artichoke", 1, Integer::sum);
+
+		HashMap<String, Integer> sortedMap = sortByValue(originalMap);
+
+		for (String i : sortedMap.keySet()) {
+			System.out.println(i + " with " + sortedMap.get(i));
+		}
+	}
+
+	/**
+	 *  Sort hashmap by values from lowest to highest.
+	 *  
+	 *  @param myMap The unsorted hashmap
+	 *  @return The sorted hashmap
+	 *  @since 1.0
+	 */
+	public static HashMap<String, Integer> sortByValue(HashMap<String, Integer> myMap)
+	{
+		// Create a list from elements of HashMap
+		List<Map.Entry<String, Integer> > list =
+				new LinkedList<Map.Entry<String, Integer> >(myMap.entrySet());
+
+		// Sort the list
+		Collections.sort(list, new Comparator<Map.Entry<String, Integer> >() {
+			public int compare(Map.Entry<String, Integer> o1,  
+					Map.Entry<String, Integer> o2)
+			{
+				return (o1.getValue()).compareTo(o2.getValue());
+			}
+		});
+
+		// put data from sorted list to hashmap  
+		HashMap<String, Integer> temp = new LinkedHashMap<String, Integer>();
+		for (Map.Entry<String, Integer> aa : list) {
+			temp.put(aa.getKey(), aa.getValue());
+		}
+		return temp;
+	}
+}

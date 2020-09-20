@@ -62,7 +62,7 @@ public class AllThingsDateAndTime {
 		String startDateMMdd = monthDateFormat.format(startDate);
 		System.out.println(startDate);
 		System.out.println(startDateMMdd);
-		
+
 		//Create formatted date and time based on customer input, add or subtract days #4
 		SimpleDateFormat formatterX = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
 		String rawCustomerString = "2001-07-04T12:08:56.235-07:00";
@@ -322,6 +322,16 @@ public class AllThingsDateAndTime {
 
 		System.out.println(outTime.format(inTime.parse(rawResponseTime)));
 
+
+		System.out.println();
+
+
+		System.out.println(getFirstDayOfThisQuarter(new Date()));
+		System.out.println(getLastDayOfThisQuarter(new Date()));
+		System.out.println(getFirstDayOfLastQuarter(new Date()));
+		System.out.println(getLastDayOfLastQuarter(new Date()));
+		System.out.println(getFirstDayOfThisYear(new Date()));
+
 	}
 
 
@@ -433,5 +443,115 @@ public class AllThingsDateAndTime {
 		while (startCal.getTimeInMillis() <= endCal.getTimeInMillis());
 
 		return workDays;
+	}
+
+	/**
+	 *  Finds the first date of the quarter for
+	 *  a given date.
+	 *  
+	 *  @param date The provided date
+	 *  @return The first date
+	 *  @since 1.0
+	 */
+	public static Date getFirstDayOfThisQuarter(Date date) {
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date);
+		cal.set(Calendar.DAY_OF_MONTH, 1);
+		cal.set(Calendar.MONTH, cal.get(Calendar.MONTH)/3 * 3);
+		return cal.getTime();
+	}
+
+
+	/**
+	 *  Finds the last date of the quarter for
+	 *  a given date.
+	 *  
+	 *  @param date The provided date
+	 *  @return The last date
+	 *  @since 1.0
+	 */
+	public static Date getLastDayOfThisQuarter(Date date) {
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date);
+		cal.set(Calendar.DAY_OF_MONTH, 1);
+		cal.set(Calendar.MONTH, cal.get(Calendar.MONTH)/3 * 3 + 2);
+		cal.set(Calendar.DAY_OF_MONTH, cal.getActualMaximum(Calendar.DAY_OF_MONTH));
+		return cal.getTime();
+	}
+
+
+	/**
+	 *  Finds the first date of the last quarter for
+	 *  a given date.
+	 *  
+	 *  @param date The provided date
+	 *  @return The first date
+	 *  @since 1.0
+	 */
+	public static Date getFirstDayOfLastQuarter(Date date) {
+		Calendar cal = Calendar.getInstance();
+		int year = cal.get(Calendar.YEAR);
+		int month = cal.get(Calendar.MONTH);
+		int presentQuarter = (month / 3) + 1;
+		int lastQuarter = 0;
+
+		if(presentQuarter - 1 > 0){
+			lastQuarter = presentQuarter - 1;
+		}else{
+			lastQuarter = 4;
+			year--;
+		}
+
+		month = lastQuarter * 3 - 1;
+
+		cal.set(year, month, 1);
+		return cal.getTime();
+	}
+
+
+	/**
+	 *  Finds the last date of the last quarter for
+	 *  a given date.
+	 *  
+	 *  @param date The provided date
+	 *  @return The first date
+	 *  @since 1.0
+	 */
+	public static Date getLastDayOfLastQuarter(Date date) {
+		Calendar cal = Calendar.getInstance();
+		int year = cal.get(Calendar.YEAR);
+		int month = cal.get(Calendar.MONTH);
+		int presentQuarter = (month / 3) + 1;
+		int lastQuarter = 0;
+
+		if(presentQuarter - 1 > 0){
+			lastQuarter = presentQuarter - 1;
+		}else{
+			lastQuarter = 4;
+			year--;
+		}
+
+		month = lastQuarter * 3 - 1;
+
+		int day = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
+		cal.set(year, month, day);
+
+		return cal.getTime();
+	}
+
+
+	/**
+	 *  Finds the first date of the year for a given date
+	 *  
+	 *  @param date The provided date
+	 *  @return The first date
+	 *  @since 1.0
+	 */
+	public static Date getFirstDayOfThisYear(Date date) {
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date);
+		cal.set(Calendar.DAY_OF_MONTH, 1);
+		cal.set(Calendar.MONTH, Calendar.JANUARY);
+		return cal.getTime();
 	}
 }

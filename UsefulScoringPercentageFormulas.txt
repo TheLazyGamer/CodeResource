@@ -21,8 +21,8 @@ Now, I had already adopted, many years before, such syntactic convolutions as,
 }
 
 
-
-
+//Scrape youtube video as mp3
+youtube-dl -x --audio-format mp3 https://www.youtube.com/watch?v=XXXXXXXXXXXXX
 
 //Scrape a single subdirectory
 wget -r -l1 --no-parent http://www.domain.com/subdirectory/

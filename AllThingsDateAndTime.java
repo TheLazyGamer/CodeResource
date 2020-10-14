@@ -75,6 +75,15 @@ public class AllThingsDateAndTime {
 		System.out.println(newCustomerString);
 
 
+		System.out.println();
+
+
+		System.out.println(getCurrentTimezoneOffset());
+
+
+		System.out.println();
+
+
 		//Loop thru every day of a year
 		for (int y = 0; y < 365; y++) {
 			//System.out.println("y " + y);
@@ -444,6 +453,20 @@ public class AllThingsDateAndTime {
 
 		return workDays;
 	}
+
+
+	public static String getCurrentTimezoneOffset() {
+
+		TimeZone tz = TimeZone.getTimeZone("Europe/Oslo");
+		Calendar cal = Calendar.getInstance(tz);
+		int offsetInMillis = tz.getOffset(cal.getTimeInMillis());
+
+		String offset = String.format("%02d:%02d", Math.abs(offsetInMillis / 3600000), Math.abs((offsetInMillis / 60000) % 60));
+		offset = (offsetInMillis >= 0 ? "+" : "-") + offset;
+
+		return offset;
+	}
+
 
 	/**
 	 *  Finds the first date of the quarter for

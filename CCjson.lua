@@ -1,4 +1,4 @@
-EXAMPLE --6qmBBLpz
+EXAMPLE --6qmBBLpz (turtle) --4nRg9CHU (json)
 os.loadAPI("json")
 str = http.get("http://www.someserver.com/").readAll()
 obj = json.decode(str)

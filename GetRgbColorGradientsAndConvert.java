@@ -17,7 +17,7 @@ public class GetRgbColorGradientsAndConvert {
 		int green = (int) (weight * 255);
 
 		// Return backgroundColor value
-		System.out.println(red + "," + green + ", 0");
+		System.out.println(red + "," + green + ",0");
 
 		String hex = String.format("0x%02X%02X%02X", red, green, 0);
 		System.out.println(hex);

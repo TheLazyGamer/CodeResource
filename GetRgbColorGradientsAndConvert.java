@@ -12,18 +12,19 @@ public class GetRgbColorGradientsAndConvert {
 		int largestWinPctInDataset = 100;
 
 
-		int maxRedForBiggestLoss = 2;
-		int maxGreenForBiggestLoss = 176;
+		int maxRedForBiggestLoss = 255;
+		int maxGreenForBiggestLoss = 0;
 		int maxBlueForBiggestLoss = 0;
 
 		int minRedForSmallestLoss = 255;
 		int minGreenForSmallestLoss = 255;
 		int minBlueForSmallestLoss = 255;
 
-		int smallestLossPctInDataset = 0;
-		int largestLossPctInDataset = -100;
+		int smallestLossPctInDataset = -100;
+		int largestLossPctInDataset = 0;
 
-		int cellValue = 43;
+		int positiveCellValue = 100;
+		int negativeCellValue = -100;
 
 		/*
 		 * Find the minimum and maximum values of the column you wish to style.
@@ -41,13 +42,24 @@ let red = weight * 36 + (1 - weight) * 198;
 let green = weight * 114 + (1 - weight) * 57;
 let blue = weight * 76 + (1 - weight) * 9;
 		 */
-		runConversion(smallestWinPctInDataset, largestWinPctInDataset, cellValue,
+
+		//For zero to positives
+		runConversion(smallestWinPctInDataset, largestWinPctInDataset, positiveCellValue,
 				maxRedForBiggestWin,
 				maxGreenForBiggestWin,
 				maxBlueForBiggestWin,
 				minRedForSmallestWin,
 				minGreenForSmallestWin,
 				minBlueForSmallestWin);
+
+		//For negatives to zero
+		runConversion(smallestLossPctInDataset, largestLossPctInDataset, negativeCellValue,
+				maxRedForBiggestLoss,
+				maxGreenForBiggestLoss,
+				maxBlueForBiggestLoss,
+				minRedForSmallestLoss,
+				minGreenForSmallestLoss,
+				minBlueForSmallestLoss);
 	}
 
 	private static void runConversion(int min, int max, int cellValue,
@@ -57,7 +69,7 @@ let blue = weight * 76 + (1 - weight) * 9;
         The weight can be between 0 (when value === min)
         and 1 (when value === max)
 		 */
-		double weight = (Math.abs(cellValue) - min * 1.0)/(max - min * 1.0);
+		double weight = (cellValue - min * 1.0)/(max - min * 1.0);
 
 		int red = (int) (weight * maxRedForBiggest + (1 - weight) * minRedForSmallest);
 		int green = (int) (weight * maxGreenForBiggest + (1 - weight) * minGreenForSmallest);

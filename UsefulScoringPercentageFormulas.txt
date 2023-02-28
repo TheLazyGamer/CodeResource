@@ -45,6 +45,8 @@ Now, I had already adopted, many years before, such syntactic convolutions as,
 
 //Scrape youtube video as mp3
 youtube-dl -x --audio-format mp3 https://www.youtube.com/watch?v=XXXXXXXXXXXXX
+yt-dlp.exe -x --audio-format mp3 --audio-quality 0 https://www.youtube.com/watch?v=x7bhCJyynkA
+yt-dlp -x --audio-format mp3 --cookies-from-browser chrome "https://www.youtube.com/watch?v=Y7z0PwXjI6Q" -o '%(title)s.%(id)s.%(ext)s'
 
 //Scrape a single subdirectory
 wget -r -l1 --no-parent http://www.domain.com/subdirectory/

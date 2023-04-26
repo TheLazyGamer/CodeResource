@@ -154,3 +154,7 @@ y’ = 65.14 + .385225x
  
  
 Wolfram Alpha derive quadratic equation from plots - equation {508,410}{595,370}{301,490}{175,520} or quadratic {508,410}{595,370}{301,490}{175,520}{190,520}
+
+
+A Bash one-liner to produce a list of HEX color codes that read like (supposedly) valid English words
+grep -P "^[ABCDEFabcdefOoIi]{6,6}$" /usr/share/dict/words | tr 'OoIi' '0011' | tr '[:lower:]' '[:upper:]' | awk '{print "#" $0}' 

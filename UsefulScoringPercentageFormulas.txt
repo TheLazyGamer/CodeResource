@@ -158,3 +158,18 @@ Wolfram Alpha derive quadratic equation from plots - equation {508,410}{595,370}
 
 A Bash one-liner to produce a list of HEX color codes that read like (supposedly) valid English words
 grep -P "^[ABCDEFabcdefOoIi]{6,6}$" /usr/share/dict/words | tr 'OoIi' '0011' | tr '[:lower:]' '[:upper:]' | awk '{print "#" $0}' 
+
+Amazon Sum Bookmarklet
+var sumTotal = 0;
+
+var wholePrices = $x("//span[@class='a-price-whole']")
+
+for (const element of wholePrices) {
+  var itemPrice = element.textContent;
+  itemPrice = itemPrice.substring(0,itemPrice.length-1);
+    console.log(itemPrice);
+	sumTotal = sumTotal + parseInt(itemPrice, 10) + 1;
+	console.log(sumTotal);
+}
+
+console.log(sumTotal);
